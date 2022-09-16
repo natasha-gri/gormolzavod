@@ -1,0 +1,207 @@
+.first-font {
+  font-family: 'Bookman Old Style', 'Times New Roman', Times, serif;
+}
+
+.second-font {
+  font-family: 'Circe', Arial, Helvetica, sans-serif;
+}
+
+/* h1 */
+h1 {
+  @extend .first-font;
+  font-size: 4.375em; //70
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 110%;
+  color: #1D1D1D;
+}
+
+h2 {
+  @extend .first-font;
+  font-size: 2.4375em; //39
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $h2-color;
+  margin-bottom: $section-margin-bottomn;
+}
+
+h3{
+  @extend .first-font;
+  font-size: 2em; //32
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $h2-color;
+  margin-bottom: $section-margin-bottomn;
+}
+
+.h2-page {
+  margin-top: -10px;
+  margin-bottom: 0.5em;
+}
+
+.cover-cont-wrap-h1{
+  position: relative;
+  @extend .first-font; 
+  text-align: left;
+  color: #fff;
+  margin-bottom: 40px;
+  & span {
+    font-style: italic;
+    &:nth-child(4) {
+      padding-left: 150px;
+    }
+  }
+}
+.cover-cont-wrap-p {
+  @extend .first-font;
+  font-size: 1.4em; //24px
+  line-height: 161%;
+  //text-transform: lowercase;
+  color: #E2F0E5;
+  margin-bottom: 55px;
+}
+
+.cover-slider-content-row p {
+  @extend .second-font;
+  font-size: 1.25em; //20px
+  font-style: normal;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+/* main text */
+.text-basic,
+p {
+  @extend .second-font;
+  font-size: 1em; //16px
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  letter-spacing: 0.025em;
+  color: $text-main;
+  margin-bottom: 15px;
+}
+
+
+
+// start links
+a {
+  @extend .second-font;
+  font-size: 1em; //16px
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  letter-spacing: 0.025em;
+  text-transform: lowercase;
+  color: $links;
+
+  &:hover {
+    color: darken($links, 10%);
+  }
+}
+
+.menu-link {
+  @extend .text-basic;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  &:hover {
+    color: white;
+    &::after {
+      transform: translateY(2px) scale(1);
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 55%;
+    top: 22px;
+    height: 1px;
+    background: white;
+    transform: translateY(2px) scale(0);
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+}
+
+.card-link {
+  @extend .second-font;
+  font-size: 1em; //16px
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.025em;
+  text-transform: lowercase;
+  color: $product-link-card;
+
+  &:hover {
+    color: darken($product-link-card, 10%);
+  }
+}
+// end links
+
+// start cards
+.text-name-card {
+  margin-bottom: 6px;
+  @extend .first-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.875em; //30
+  line-height: 100%;
+  text-align: left;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: $product-name-card;
+}
+
+.text-value-card {
+  margin-bottom: 6px;
+  @extend .first-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.625em; //26
+  line-height: 100%;
+  text-align: left;
+  letter-spacing: 0.025em;
+  color: $product-name-card;
+}
+
+.text-text-card {
+  margin-bottom: 6px;
+  @extend .second-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875em; //14
+  line-height: 120%;
+  text-align: left;
+  letter-spacing: 0.025em;
+  color: $product-text-card;
+}
+// end cards
+
+.footer-text {
+  @extend .second-font;
+  font-size: 1em; //16px
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 169%;
+  letter-spacing: 0.025em;
+  color: $text-1;
+}
+

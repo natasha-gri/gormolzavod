@@ -1,0 +1,70 @@
+/* ====== 1 Прижать футер */
+/* 1) */
+html, body {
+  height: 100%;
+  //background-color: $main-color-bg;
+}
+/* 2) */
+.main-container {
+  min-height: 100%;
+}
+/* 3) + цвет фона + центрирование содержимого*/
+footer {
+  height: 276px;
+  margin-top: -276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* 4) */
+.clr {
+  height: 276px;
+}
+// конец правила для прижатия футера
+
+// ====== 2 стили ширина и границы сетки
+/* ширина + границы сетки */
+.container-rows {
+  width: 66.66%; // 1280/1920
+  margin: 0 auto;
+  //outline: 1px solid rgb(216, 10, 206);
+  box-sizing: border-box;
+}
+
+// ====== 3 стили для отступов сверху-снизу секции
+/* 1) для верхнего меню */
+.padding-block-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* 2) для обложки */
+// .padding-block-cover {
+//   min-height: 100vh;
+//   padding-top: 28vh;
+//   padding-bottom: 90px;
+// }
+/* 3) для изображения*/
+.padding-block-img {
+  min-height: 200px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+/* 4) для заголовка и текста*/
+.padding-block-text {
+  min-height: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* 5) для заголовка и изображения*/
+.padding-block-textimg {
+  min-height: 200px;
+  padding-top: 70px;
+  padding-bottom: 86px;
+}
+
+//============================
+.blockundermenu{
+  height: 75px;
+}
+

@@ -1,0 +1,19 @@
+@media (max-width : 768px) {
+  footer{
+    height: 305px;
+    margin-top: -305px;
+    padding-top: 35px;
+  }
+
+  .clr {
+    height: 305px;
+  }
+
+  .container-rows {
+    width: 92.7%; // 712/768
+  }
+
+  .padding-block-header{
+    justify-content: center;
+  }
+}

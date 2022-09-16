@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+.product-cont{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    &-slider{
+        width: 100%;
+    }
+    &-text{
+        width: 100%;
+        &-h2{
+            margin-bottom: 30px;
+            text-align: center
+        }
+        &-cols{
+            width: 80%;
+            margin: 0 auto;
+        }
+        }
+    }
+
+    .wiki-cont{
+        &-text{
+            flex-direction: column;
+            & p{
+                width: 100%;
+            }
+        }
+    }
+}

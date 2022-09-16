@@ -1,0 +1,30 @@
+@media (max-width: 480px) {
+    .product-cont{
+        &-text{
+            &-cols{
+                width: 100%;
+                &-col{
+                    justify-content: space-between;
+                    & p{
+                        &:nth-child(1) {
+                            width: 30%;
+                            font-weight: bold;
+                        }
+                        &:nth-child(2) {
+                            width: 66%;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+
+    .btn-slider-left{
+        margin-left: 0;
+    }
+
+    .btn-slider-right{
+        margin-right: 0;
+    }
+
+}

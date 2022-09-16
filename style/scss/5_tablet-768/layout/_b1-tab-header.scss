@@ -1,0 +1,54 @@
+@media (max-width: 768px) {
+    .top-header-content{
+        justify-content: space-between;
+        &-logocont{
+            display: none;
+        }
+    }
+
+    .mobile-logo{
+        display: block;
+        margin-top: -85px;
+    }
+
+    /////////////////
+    .main-header-menu {
+    //position: relative;
+    &-wrp{
+        z-index: 1;
+        visibility: hidden;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        top: 85px;
+        background-color: rgba(255, 255, 255, 0.9);
+        &-link{
+            min-width: 275px;
+            margin-top: 0;
+            padding: 30px 40px;
+        p{
+            &:hover{
+            &::before {
+            display: none;
+            }
+            }
+        }
+        }
+    }
+    }
+    
+    .main-header-menu-label {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url(/img/menu.svg);
+    background-size: 100%;
+    background-position: 0 0;
+    }
+    // дублирую на 926
+    .main-header-menu-input[type="checkbox"]:checked ~ .main-header-menu-wrp {
+    height: auto;
+    visibility: visible;
+    }
+/* end */
+}

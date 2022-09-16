@@ -1,0 +1,40 @@
+footer{
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+  background-color: $main-color-green;
+}
+
+.footer-logocont {
+    position: absolute;
+    top: -43px;
+}
+
+.footer-cont {
+  display: flex;
+  justify-content: space-between; 
+
+  &-copyright {
+      position: relative;
+    &-dev{
+      display: flex;
+      &-logo{
+        text-transform: uppercase;
+        color: $text-1;
+      }
+    }
+      
+  }
+  &-contacts{
+      width: 37%;
+      display: flex;
+      &-phone{
+        width: 50%;
+      }
+      &-adres{
+        width: 50%;
+        text-align: right;
+      }
+  }
+}

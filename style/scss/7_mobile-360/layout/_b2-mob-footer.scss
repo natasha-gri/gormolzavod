@@ -1,0 +1,29 @@
+@media (max-width: 360px) {
+  .footer-cont{
+    &-copyright{      
+    flex-direction: column;
+    align-items: center;
+      &-dev{
+        align-items: center;
+      }
+      &-text p{
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+    &-contacts{
+      flex-direction: column;
+      align-items: center;
+      &-phone{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      &-adres{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+  }
+}

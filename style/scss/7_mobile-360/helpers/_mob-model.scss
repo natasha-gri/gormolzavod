@@ -1,0 +1,15 @@
+@media (max-width : 360px) {
+  footer{
+    height: 468px;
+    margin-top: -468px;
+    padding-top: 105px;
+  }
+
+  .clr {
+    height: 468px;
+  }
+
+  .container-rows {
+    width: 89.44%; // 322/360
+  }
+}

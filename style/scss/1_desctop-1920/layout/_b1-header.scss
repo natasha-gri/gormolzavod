@@ -1,0 +1,52 @@
+/* Верхнее меню */
+/* фиксация, цвет */
+.top-header{
+  width: 100%;
+  min-height: 85px;
+  background-color: $main-color-green;
+  &-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-logocont {
+      position: relative;
+      width: 142px;
+      display: flex;
+      justify-content: center;
+      & a {
+        position: absolute;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.mobile-logo{
+  display: none;
+}
+
+////////////////////
+.main-header-menu{
+  &-wrp{
+    display: flex;
+    
+    //outline: 1px solid rgb(10, 10, 216);
+    &-link{
+      min-width: 170px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 30px;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      //outline: 1px solid rgb(167, 181, 17);      
+    }
+  }
+}
+
+label,
+#menu {
+  display: none;
+}

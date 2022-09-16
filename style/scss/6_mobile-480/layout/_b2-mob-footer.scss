@@ -1,0 +1,23 @@
+@media (max-width: 480px) {
+  .footer-cont{
+    height: 265px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    &-copyright{
+      width: 100%;
+      display: flex;
+      &-dev{
+        align-items: flex-end;
+        & p{
+          text-align: right;
+        }
+      }
+    }
+    &-contacts{
+      width: 100%;
+      &-adres{
+        width: 53%;
+      }
+    }
+  }
+}
