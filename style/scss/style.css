@@ -266,29 +266,6 @@ main {
   padding-top: 70px;
   padding-bottom: 70px; }
 
-.whiteblock {
-  background-color: white;
-  background-image: url(/img/block-white-img-1.svg), url(/img/block-white-img-2.svg);
-  background-position: 10px 10px, 99% 100%;
-  background-repeat: no-repeat;
-  background-size: 15%, 15%;
-  border-radius: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
-
-.whiteblock-map {
-  background-color: white;
-  background-image: url(/img/block-white-img-1.svg), url(/img/img-map.png), url(/img/beetle.svg);
-  background-position: 10px 10px, 95% 85%, 90% 100%;
-  background-repeat: no-repeat;
-  background-size: 15%, 30%, 2%;
-  border-radius: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
-
-.greenblock {
-  background: linear-gradient(90deg, #669C85 0%, #97CDB6 100%);
-  border-radius: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
-
 /* 1-Обложка */
 .cover {
   height: 725px;
@@ -344,23 +321,30 @@ main {
       backdrop-filter: blur(10px); }
 
 /* 1 блок */
-.products {
+.blockwhite {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 24px 80px 24px; }
-  .products-cols {
+  padding: 70px 24px 80px 24px;
+  background-color: white;
+  background-image: url(/img/block-white-img-1.svg), url(/img/block-white-img-2.svg);
+  background-position: 10px 10px, 99% 100%;
+  background-repeat: no-repeat;
+  background-size: 15%, 15%;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
+  .blockwhite-cols {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     row-gap: 80px;
     column-gap: 2%;
     margin-bottom: 88px; }
-    .products-cols-col {
+    .blockwhite-cols-col {
       width: 23%;
       box-sizing: border-box;
       position: relative; }
-      .products-cols-col-img {
+      .blockwhite-cols-col-img {
         width: 40%;
         padding-left: 2%;
         padding-right: 2%;
@@ -368,7 +352,7 @@ main {
         justify-content: center;
         position: absolute;
         bottom: -45px; }
-      .products-cols-col-grey {
+      .blockwhite-cols-col-grey {
         padding: 15px 5px 15px 0;
         display: flex;
         justify-content: flex-end;
@@ -378,30 +362,10 @@ main {
         background-repeat: no-repeat;
         background-size: 25%;
         border-radius: 15.3722px; }
-        .products-cols-col-grey-cont {
+        .blockwhite-cols-col-grey-cont {
           width: 60%; }
-    .products-cols-gap {
+    .blockwhite-cols-gap {
       width: 5%; }
-
-/* 2 блок */
-.progress-numbers {
-  display: flex; }
-.progress-photo {
-  display: flex; }
-
-/* 3 блок */
-.benefits-items {
-  display: flex; }
-.benefits-docs {
-  display: flex; }
-
-/* 4 блок */
-.shops {
-  display: flex; }
-
-/* 5 блок */
-.locations {
-  display: flex; }
 
 .product-cont {
   display: flex;

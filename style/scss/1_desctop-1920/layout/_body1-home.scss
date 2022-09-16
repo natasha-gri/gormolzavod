@@ -10,6 +10,36 @@ padding-top: 70px;
 padding-bottom: 70px;
 }
 
+.whiteblock{
+  background-color: white;
+  background-image: url(/img/block-white-img-1.svg),
+  url(/img/block-white-img-2.svg);
+  background-position: 10px 10px, 99% 100%; 
+  background-repeat: no-repeat;
+  background-size: 15%, 15%;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.whiteblock-map{
+  background-color: white;
+  background-image: url(/img/block-white-img-1.svg),
+  url(/img/img-map.png),
+  url(/img/beetle.svg);
+  background-position: 10px 10px, 95% 85%, 90% 100%; 
+  background-repeat: no-repeat;
+  background-size: 15%, 30%, 2%;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.greenblock{
+  background: linear-gradient(90deg, #669C85 0%, #97CDB6 100%);
+  
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+}
+
 /* 1-Обложка */
 .cover {
   height: 725px;
@@ -82,19 +112,12 @@ padding-bottom: 70px;
 
 /* 1 блок */
 
-.blockwhite-cont{
+.products{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 70px 24px 80px 24px;
-  background-color: white;
-  background-image: url(/img/block-white-img-1.svg),
-  url(/img/block-white-img-2.svg);
-  background-position: 10px 10px, 99% 100%; 
-  background-repeat: no-repeat;
-  background-size: 15%, 15%;
-  border-radius: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  
   &-cols{
     display: flex;
     justify-content: flex-start;
@@ -143,4 +166,34 @@ padding-bottom: 70px;
       width: 5%;
   }
 }
+}
+
+/* 2 блок */
+.progress{
+  &-numbers{
+    display: flex;
+  }
+  &-photo{
+    display: flex;
+  }
+}
+
+/* 3 блок */
+.benefits{
+  &-items{
+    display: flex;
+  }
+  &-docs{
+    display: flex;
+  }
+}
+
+/* 4 блок */
+.shops{
+  display: flex;
+}
+
+/* 5 блок */
+.locations{
+  display: flex;
 }
