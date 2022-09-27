@@ -2,6 +2,15 @@
     body{
         background-size: 22%;
     }
+
+    .whiteblock{
+        background-size: 28%, 32%;
+    }
+
+    .whiteblock-map{
+        background-size: 28%, 50%, 5%;
+    }
+    
     .cover{
         &-cont { 
             width: 100%;
@@ -18,5 +27,89 @@
     .blockwhite-cont{
         background-size: 23%, 23%;
     }
+
+    // 1
+    .products{
+        &-cols{
+        &-col{
+            width: 49%
+        }
+        }
+    }
+
+    // 2
+    .progress{
+        &-numbers{
+        column-gap: 20px;
+        justify-content: center;
+        &-item{
+            width: 40%;
+        }
+        }
+        &-photo{
+            flex-wrap: wrap;
+            &-img{
+                width: 100%;
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+          }
+    }
+
+    // 3
+    .benefits{
+        &-cols{
+            flex-direction: column;
+            &-leftcol{
+                width: 100%;
+                p{
+                    text-align: left;
+                }
+                &-row{
+                    &-title{
+                        &:after{
+                            content: none;
+                        }
+                        &:before{
+                            content: url(/img/leaves-title.svg);
+                            margin-right: 12px;
+                          }
+                    }
+                }
+            }
+            &-rightcol{
+                width: 100%;
+            }
+        }
+        &-quote{
+           & p{
+            width: 100%;
+           } 
+        }
+        &-docs{
+            justify-content: space-evenly;
+           & img{
+            max-width: 32%;
+            &:nth-child(n+4){
+                display: none;
+            }
+
+        } 
+        }
+        
+    }
+
+    //4 
+    .shops{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // 5
+    .locations{
+        width: 100%;
+    }
+
 }
 

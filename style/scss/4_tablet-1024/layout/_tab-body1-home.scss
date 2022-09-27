@@ -16,5 +16,30 @@
       }
     }
   }
-  
+
+  .products{
+    &-cols{
+      justify-content: space-evenly;
+      &-col{
+        width: 33%
+      }
+    }
+  }
+
+  .progress{
+    &-numbers{
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      &-item{
+        width: 24%;
+      }
+    }
+  }
+
+  // 5
+  .locations{
+    width: 92%;
+  }
+
 }
+

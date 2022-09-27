@@ -1,16 +1,22 @@
 @media (max-width: 1024px) {
-// start cards
-.text-name-card {
-  font-size: 1.875em; //30
-}
 
-.text-value-card {
-  font-size: 1.625em; //26
-}
+  h2{
+    font-size: 2em; //32
+    margin-bottom: 38px;
+  }
 
-.text-text-card {
-  font-size: 0.875em; //14
-}
-// end cards
+  // start cards
+  .text-name-card {
+    font-size: 1.875em; //30
+  }
+
+  .text-value-card {
+    font-size: 1.625em; //26
+  }
+
+  .text-text-card {
+    font-size: 0.875em; //14
+  }
+  // end cards
   
 }

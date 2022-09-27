@@ -6,7 +6,7 @@
   font-family: 'Circe', Arial, Helvetica, sans-serif;
 }
 
-/* h1 */
+/********************** h1 */
 h1 {
   @extend .first-font;
   font-size: 4.375em; //70
@@ -24,10 +24,14 @@ h2 {
   font-style: normal;
   line-height: 120%;
   letter-spacing: 0.025em;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   text-align: center;
-  color: $h2-color;
+  color: $text-color-green;
   margin-bottom: $section-margin-bottomn;
+}
+
+.typ-h2-greenblock {
+ color: $text-color-white;
 }
 
 h3{
@@ -39,7 +43,7 @@ h3{
   letter-spacing: 0.025em;
   text-transform: uppercase;
   text-align: center;
-  color: $h2-color;
+  color: $text-color-green;
   margin-bottom: $section-margin-bottomn;
 }
 
@@ -48,6 +52,7 @@ h3{
   margin-bottom: 0.5em;
 }
 
+//******************* Обложка
 .cover-cont-wrap-h1{
   position: relative;
   @extend .first-font; 
@@ -78,7 +83,7 @@ h3{
   color: rgba(255, 255, 255, 0.60);
 }
 
-/* main text */
+/*************** main text */
 .text-basic,
 p {
   @extend .second-font;
@@ -94,7 +99,7 @@ p {
 
 
 
-// start links
+//************** start links
 a {
   @extend .second-font;
   font-size: 1em; //16px
@@ -153,9 +158,9 @@ a {
     color: darken($product-link-card, 10%);
   }
 }
-// end links
+//************************** end links
 
-// start cards
+//************************** start cards
 .text-name-card {
   margin-bottom: 6px;
   @extend .first-font;
@@ -192,7 +197,71 @@ a {
   letter-spacing: 0.025em;
   color: $product-text-card;
 }
-// end cards
+//****************************** end cards
+
+//****************************** 2 блок
+
+.typ-numbers-statistic {
+  @extend .first-font;
+  font-size: 5.8125em; //93
+  line-height: 1.2em; //25.6
+  font-weight: 600;
+  color: $text-color-white;
+}
+
+.typ-numbers-description{
+  @extend .second-font;
+  font-size: 1em;
+  line-height: 1.1em;
+  color: $text-color-white;
+}
+//****************************** 2 блок END
+
+//****************************** 3 блок
+
+.typ-benefits-title{
+  @extend .second-font;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: $text-color-green;
+}
+
+.typ-benefits-description{
+  line-height: 1.3em;
+}
+
+.typ-benefits-quote{
+  @extend .second-font;
+  font-size: 1.5em; //24
+  line-height: 1.25em;
+  text-align: center;
+  color: $text-color-grey;
+}
+//****************************** 3 блок END
+
+//****************************** 4 блок
+.typ-shops-title{
+  @extend .first-font;
+  font-size: 1.75em; //28
+  font-weight: 600;
+  //text-transform: uppercase;
+  color: $text-color-white;
+}
+
+.typ-shops-information{
+  color: $text-color-white;
+}
+//****************************** 4 блок END
+
+//****************************** 4 блок
+.typ-locations-title{
+  @extend .second-font;
+  font-size: 1.25em; //20
+  font-weight: 600;
+  text-transform: uppercase;
+  //color: $text-color-white;
+}
+//****************************** 4 блок END
 
 .footer-text {
   @extend .second-font;

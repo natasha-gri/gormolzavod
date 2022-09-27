@@ -1,0 +1,17 @@
+@media (max-width: 480px) {
+  .btn-page {
+    padding: 21px 20% 17px 10%;
+    &::after {
+      right: 10%;
+    }
+  }
+
+    // 5
+    .locations{
+      flex-direction: column;
+      &-areas{
+        width: 100%;
+      }
+    }
+
+}

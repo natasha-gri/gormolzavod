@@ -55,14 +55,14 @@ footer {
 .blockundermenu {
   height: 75px; }
 
-.first-font, h1, h2, h3, .cover-cont-wrap-h1, .cover-cont-wrap-p, .text-name-card, .text-value-card {
+.first-font, h1, h2, h3, .cover-cont-wrap-h1, .cover-cont-wrap-p, .text-name-card, .text-value-card, .typ-numbers-statistic, .typ-shops-title {
   font-family: 'Bookman Old Style', 'Times New Roman', Times, serif; }
 
 .second-font, .cover-slider-content-row p, .text-basic, .menu-link,
-p, a, .card-link, .text-text-card, .footer-text, .btn-cover, .cover-slider-btn, .btn-page {
+p, a, .card-link, .text-text-card, .typ-numbers-description, .typ-benefits-title, .typ-benefits-quote, .typ-locations-title, .footer-text, .btn-cover, .cover-slider-btn, .btn-page {
   font-family: 'Circe', Arial, Helvetica, sans-serif; }
 
-/* h1 */
+/********************** h1 */
 h1 {
   font-size: 4.375em;
   font-weight: bold;
@@ -77,10 +77,12 @@ h2 {
   font-style: normal;
   line-height: 120%;
   letter-spacing: 0.025em;
-  text-transform: uppercase;
   text-align: center;
   color: #378E6f;
   margin-bottom: 55px; }
+
+.typ-h2-greenblock {
+  color: #ffffff; }
 
 h3 {
   font-size: 2em;
@@ -119,7 +121,7 @@ h3 {
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.6); }
 
-/* main text */
+/*************** main text */
 .text-basic, .menu-link,
 p {
   font-size: 1em;
@@ -208,6 +210,44 @@ a {
   letter-spacing: 0.025em;
   color: #86A2A3; }
 
+.typ-numbers-statistic {
+  font-size: 5.8125em;
+  line-height: 1.2em;
+  font-weight: 600;
+  color: #ffffff; }
+
+.typ-numbers-description {
+  font-size: 1em;
+  line-height: 1.1em;
+  color: #ffffff; }
+
+.typ-benefits-title {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #378E6f; }
+
+.typ-benefits-description {
+  line-height: 1.3em; }
+
+.typ-benefits-quote {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-align: center;
+  color: #8A8A8A; }
+
+.typ-shops-title {
+  font-size: 1.75em;
+  font-weight: 600;
+  color: #ffffff; }
+
+.typ-shops-information {
+  color: #ffffff; }
+
+.typ-locations-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
 .footer-text {
   font-size: 1em;
   font-weight: normal;
@@ -267,6 +307,7 @@ main {
   padding-bottom: 70px; }
 
 .whiteblock {
+  padding: 70px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg), url(/img/block-white-img-2.svg);
   background-position: 10px 10px, 99% 100%;
@@ -275,7 +316,12 @@ main {
   border-radius: 40px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
 
+.whiteblock-products {
+  padding-left: 24px;
+  padding-right: 24px; }
+
 .whiteblock-map {
+  padding: 70px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg), url(/img/img-map.png), url(/img/beetle.svg);
   background-position: 10px 10px, 95% 85%, 90% 100%;
@@ -285,6 +331,7 @@ main {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
 
 .greenblock {
+  padding: 70px 70px 80px 70px;
   background: linear-gradient(90deg, #669C85 0%, #97CDB6 100%);
   border-radius: 40px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35); }
@@ -347,8 +394,7 @@ main {
 .products {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 70px 24px 80px 24px; }
+  align-items: center; }
   .products-cols {
     display: flex;
     justify-content: flex-start;
@@ -360,7 +406,7 @@ main {
       width: 23%;
       box-sizing: border-box;
       position: relative; }
-      .products-cols-col-img {
+      .products-cols-col-img1 {
         width: 40%;
         padding-left: 2%;
         padding-right: 2%;
@@ -368,7 +414,7 @@ main {
         justify-content: center;
         position: absolute;
         bottom: -45px; }
-      .products-cols-col-grey {
+      .products-cols-col-grey1 {
         padding: 15px 5px 15px 0;
         display: flex;
         justify-content: flex-end;
@@ -378,30 +424,181 @@ main {
         background-repeat: no-repeat;
         background-size: 25%;
         border-radius: 15.3722px; }
-        .products-cols-col-grey-cont {
+        .products-cols-col-grey1-cont {
           width: 60%; }
+      .products-cols-col-img2 {
+        width: 60%;
+        padding-left: 2%;
+        padding-right: 2%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -45px; }
+      .products-cols-col-grey2 {
+        padding: 15px 5px 15px 0;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #E8E8E8;
+        background-image: url(/img/product-card-img.svg);
+        background-position: right 106%;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        border-radius: 15.3722px; }
+        .products-cols-col-grey2-cont {
+          width: 94%; }
     .products-cols-gap {
       width: 5%; }
 
 /* 2 блок */
+.greenblock-progressimg {
+  position: relative; }
+  .greenblock-progressimg-img1 {
+    width: 147px;
+    height: 147px;
+    position: absolute;
+    top: -19px;
+    background-image: url(/img/2block-img1.svg);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .greenblock-progressimg-img2 {
+    width: 230px;
+    height: 165px;
+    position: absolute;
+    bottom: 0;
+    right: 45px;
+    background-image: url(/img/2block-img2.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100%; }
+
 .progress-numbers {
-  display: flex; }
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; }
+  .progress-numbers-item {
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .progress-numbers-item-bg {
+      width: 160px;
+      height: 89px;
+      margin-bottom: 20px;
+      position: relative;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 15.2427px; }
+      .progress-numbers-item-bg-img {
+        width: 160px;
+        height: 89px;
+        position: absolute;
+        background-image: url(/img/statistic-img.svg);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: 33%; }
+    .progress-numbers-item-statistic {
+      position: absolute;
+      right: 72px; }
+    .progress-numbers-item-description {
+      width: 163px; }
 .progress-photo {
-  display: flex; }
+  display: flex;
+  gap: 40px;
+  justify-content: space-around; }
+  .progress-photo-img {
+    width: 50%;
+    border-radius: 20px; }
 
 /* 3 блок */
-.benefits-items {
-  display: flex; }
-.benefits-docs {
-  display: flex; }
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .benefits-cols {
+    margin-bottom: 100px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: center; }
+    .benefits-cols-leftcol {
+      width: 44%; }
+      .benefits-cols-leftcol p {
+        text-align: right; }
+      .benefits-cols-leftcol-row-title:after {
+        content: url(/img/leaves-title.svg);
+        margin-left: 12px; }
+    .benefits-cols-rightcol {
+      width: 44%; }
+      .benefits-cols-rightcol-row-title:before {
+        content: url(/img/leaves-title.svg);
+        margin-right: 12px; }
+  .benefits-quote {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    .benefits-quote p {
+      width: 60%;
+      display: block; }
+    .benefits-quote:after {
+      content: "";
+      height: 1px;
+      width: 100px;
+      position: absolute;
+      top: -50px;
+      background-color: grey; }
+  .benefits-docs {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    column-gap: 1%; }
+    .benefits-docs img {
+      max-width: 19.2%;
+      height: auto;
+      object-fit: contain; }
 
 /* 4 блок */
+.greenblock-shopsimg {
+  position: relative; }
+  .greenblock-shopsimg-img1 {
+    width: 147px;
+    height: 147px;
+    position: absolute;
+    top: -13px;
+    left: -2px;
+    background-image: url(/img/shopblock-img1.svg);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    rotate: 21deg; }
+  .greenblock-shopsimg-img2 {
+    width: 288.89px;
+    height: 247.83px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    background-image: url(/img/shopblock-img2.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 83%; }
+
 .shops {
-  display: flex; }
+  display: flex;
+  column-gap: 2%; }
+  .shops-item img {
+    border-radius: 20px; }
+  .shops-item-information span img {
+    margin-right: 10px;
+    display: inline;
+    vertical-align: middle; }
 
 /* 5 блок */
 .locations {
-  display: flex; }
+  width: 80%;
+  display: flex;
+  column-gap: 4%; }
+  .locations-areas {
+    width: 33%; }
 
 .product-cont {
   display: flex;
@@ -635,6 +832,10 @@ footer {
   .container-rows {
     width: 93.94%; } }
 @media (max-width: 1024px) {
+  h2 {
+    font-size: 2em;
+    margin-bottom: 38px; }
+
   .text-name-card {
     font-size: 1.875em; }
 
@@ -651,7 +852,21 @@ footer {
     display: none; }
 
   .blockwhite-cont-cols-col {
-    width: 48%; } }
+    width: 48%; }
+
+  .products-cols {
+    justify-content: space-evenly; }
+    .products-cols-col {
+      width: 33%; }
+
+  .progress-numbers {
+    justify-content: flex-end;
+    flex-wrap: wrap; }
+    .progress-numbers-item {
+      width: 24%; }
+
+  .locations {
+    width: 92%; } }
 /* 5_tablet-от 480 до 768*/
 @media (max-width: 768px) {
   footer {
@@ -716,6 +931,12 @@ footer {
   body {
     background-size: 22%; }
 
+  .whiteblock {
+    background-size: 28%, 32%; }
+
+  .whiteblock-map {
+    background-size: 28%, 50%, 5%; }
+
   .cover-cont {
     width: 100%;
     display: flex;
@@ -726,7 +947,51 @@ footer {
       align-items: center; }
 
   .blockwhite-cont {
-    background-size: 23%, 23%; } }
+    background-size: 23%, 23%; }
+
+  .products-cols-col {
+    width: 49%; }
+
+  .progress-numbers {
+    column-gap: 20px;
+    justify-content: center; }
+    .progress-numbers-item {
+      width: 40%; }
+  .progress-photo {
+    flex-wrap: wrap; }
+    .progress-photo-img {
+      width: 100%; }
+      .progress-photo-img:nth-child(2) {
+        display: none; }
+
+  .benefits-cols {
+    flex-direction: column; }
+    .benefits-cols-leftcol {
+      width: 100%; }
+      .benefits-cols-leftcol p {
+        text-align: left; }
+      .benefits-cols-leftcol-row-title:after {
+        content: none; }
+      .benefits-cols-leftcol-row-title:before {
+        content: url(/img/leaves-title.svg);
+        margin-right: 12px; }
+    .benefits-cols-rightcol {
+      width: 100%; }
+  .benefits-quote p {
+    width: 100%; }
+  .benefits-docs {
+    justify-content: space-evenly; }
+    .benefits-docs img {
+      max-width: 32%; }
+      .benefits-docs img:nth-child(n+4) {
+        display: none; }
+
+  .shops {
+    flex-direction: column;
+    align-items: center; }
+
+  .locations {
+    width: 100%; } }
 @media (max-width: 768px) {
   .product-cont {
     flex-direction: column-reverse;
@@ -787,10 +1052,27 @@ footer {
     padding-left: 129px; }
 
   .cover-cont-wrap-p {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .typ-numbers-statistic {
+    font-size: 3.8125em; } }
 @media (max-width: 480px) {
   body {
     background-size: 43%; }
+
+  .whiteblock {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .whiteblock-map {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: 28%, 73%, 5%;
+    background-position: 10px 10px, 88% 97%, 90% 100%; }
+
+  .greenblock {
+    padding-left: 20px;
+    padding-right: 20px; }
 
   .cover-cont {
     width: 100%; }
@@ -804,7 +1086,27 @@ footer {
       flex-direction: column;
       align-items: center; }
       .blockwhite-cont-cols-col {
-        width: 98%; } }
+        width: 98%; }
+
+  .products-cols-col {
+    width: 100%; }
+
+  .progress-numbers {
+    column-gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .progress-numbers-item {
+      width: 40%; }
+      .progress-numbers-item-bg {
+        width: 111px;
+        height: 60px;
+        margin-bottom: 7px; }
+        .progress-numbers-item-bg-img {
+          width: 111px;
+          height: 60px;
+          background-size: 36%; }
+      .progress-numbers-item-statistic {
+        right: 42px; } }
 @media (max-width: 480px) {
   .product-cont-text-cols {
     width: 100%; }
@@ -837,6 +1139,16 @@ footer {
       width: 100%; }
       .footer-cont-contacts-adres {
         width: 53%; } }
+@media (max-width: 480px) {
+  .btn-page {
+    padding: 21px 20% 17px 10%; }
+    .btn-page::after {
+      right: 10%; }
+
+  .locations {
+    flex-direction: column; }
+    .locations-areas {
+      width: 100%; } }
 /* 7_mob-до 360*/
 @media (max-width: 360px) {
   footer {
@@ -866,7 +1178,19 @@ footer {
     width: 100%; }
     .cover-cont-wrap {
       width: 100%;
-      height: 74%; } }
+      height: 74%; }
+
+  .greenblock-bgimg-img1 {
+    width: 147px;
+    height: 147px;
+    background-size: 80%; }
+  .greenblock-bgimg-img2 {
+    width: 230px;
+    height: 165px;
+    background-size: 65%; }
+
+  .progress-numbers-item {
+    width: 60%; } }
 @media (max-width: 360px) {
   .footer-cont-copyright {
     flex-direction: column;

@@ -9,4 +9,26 @@
       }
   }
 
+  // 2
+  .greenblock-bgimg{
+    &-img1{
+      width: 147px;
+      height: 147px;
+      background-size: 80%;
+    }
+    &-img2{
+      width: 230px;
+      height: 165px;
+      background-size: 65%;
+    }
+  }
+
+  .progress{
+    &-numbers{
+      &-item{
+          width: 60%;
+      }
+    }
+  }
+
 }

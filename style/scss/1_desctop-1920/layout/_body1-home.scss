@@ -11,6 +11,7 @@ padding-bottom: 70px;
 }
 
 .whiteblock{
+  padding: 70px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg),
   url(/img/block-white-img-2.svg);
@@ -21,7 +22,13 @@ padding-bottom: 70px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 
+.whiteblock-products{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .whiteblock-map{
+  padding: 70px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg),
   url(/img/img-map.png),
@@ -34,6 +41,7 @@ padding-bottom: 70px;
 }
 
 .greenblock{
+  padding: 70px 70px 80px 70px;
   background: linear-gradient(90deg, #669C85 0%, #97CDB6 100%);
   
   border-radius: 40px;
@@ -116,8 +124,7 @@ padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 24px 80px 24px;
-  
+    
   &-cols{
     display: flex;
     justify-content: flex-start;
@@ -125,28 +132,26 @@ padding-bottom: 70px;
     row-gap: 80px;
     column-gap: 2%;  
     margin-bottom: 88px;
+  ////////////////////
   &-col{
     width: 23%;
     box-sizing: border-box;
-
     position: relative;
     
-    &-img{    
+    &-img1{    
       width: 40%;
       padding-left: 2%;
       padding-right: 2%;
       display: flex;
       justify-content: center;
-
       position: absolute;
       bottom: -45px;
-
       & img{
       }        
     }
-    &-grey{
-      padding: 15px 5px 15px 0;
 
+    &-grey1{
+      padding: 15px 5px 15px 0;
       display: flex;
       justify-content: flex-end;
       background-color: $product-card-color;      
@@ -157,11 +162,38 @@ padding-bottom: 70px;
       border-radius: 15.3722px;
       &-cont{
         width: 60%;
+      }
+    }
 
+    &-img2{    
+      width: 60%;
+      padding-left: 2%;
+      padding-right: 2%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: -45px;
+      & img{
+      }        
+    }
+
+    &-grey2{
+      padding: 15px 5px 15px 0;
+      display: flex;
+      justify-content: flex-end;
+      background-color: $product-card-color;      
+      background-image: url(/img/product-card-img.svg);
+      background-position: right 106%; 
+      background-repeat: no-repeat;
+      background-size: 25%;
+      border-radius: 15.3722px;
+      &-cont{
+        width: 94%;
       }
     }
 
   }
+  //////////////////////
   &-gap{
       width: 5%;
   }
@@ -169,31 +201,207 @@ padding-bottom: 70px;
 }
 
 /* 2 блок */
+
+.greenblock-progressimg{
+  position: relative;
+  &-img1{
+    width: 147px;
+    height: 147px;
+    position: absolute;
+    top: -19px;
+    background-image: url(/img/2block-img1.svg);
+    background-position: 0% 0%; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  &-img2{
+    width: 230px;
+    height: 165px;
+    position: absolute;
+    bottom: 0;
+    right: 45px;
+    background-image: url(/img/2block-img2.svg);
+    background-position: 100% 100%; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
 .progress{
   &-numbers{
+    margin-bottom: 20px;
     display: flex;
+    justify-content: space-between;
+    &-item{
+      width: 25%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      
+      &-bg{
+        width: 160px;
+        height: 89px;
+        margin-bottom: 20px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 15.2427px;
+        &-img{
+          width: 160px;
+          height: 89px;
+          position: absolute;
+          background-image: url(/img/statistic-img.svg);
+          background-position: 100% 100%;
+          background-repeat: no-repeat;
+          background-size: 33%;
+  
+        }
+      }
+
+      &-statistic{
+        position: absolute;
+        right: 72px;
+      }
+      &-description{
+        width: 163px;
+      }
+    }
   }
   &-photo{
     display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    &-img{
+      width: 50%;
+      border-radius: 20px;
+    }
   }
 }
 
 /* 3 блок */
 .benefits{
-  &-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-cols{
+    margin-bottom: 100px;
     display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    &-leftcol{
+      width: 44%;
+      p{
+        text-align: right;
+      }
+      &-row{
+        &-title{
+          &:after{
+            content: url(/img/leaves-title.svg);
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+    &-rightcol{
+      width: 44%;
+      &-row{
+        &-title{
+          &:before{
+            content: url(/img/leaves-title.svg);
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+    
   }
-  &-docs{
+
+  &-quote{
+    margin-bottom: 35px;
     display: flex;
+    justify-content: center;
+    position: relative;
+    p{
+      width: 60%;
+      display: block;
+    }
+    &:after{
+      content: "";
+      height: 1px;
+      width: 100px;
+      position: absolute;
+      top: -50px;
+      background-color: grey;
+    }
+  }
+
+  &-docs{
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    column-gap: 1%;
+    & img {
+      max-width: 19.2%;
+      height: auto;
+      object-fit: contain;
+    }
   }
 }
 
 /* 4 блок */
+
+.greenblock-shopsimg{
+  position: relative;
+  &-img1{
+    width: 147px;
+    height: 147px;
+    position: absolute;
+    top: -13px;
+    left: -2px;
+    background-image: url(/img/shopblock-img1.svg);
+    background-position: 0% 0%; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    rotate: 21deg;
+  }
+  &-img2{
+    width: 288.89px;
+    height: 247.83px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    background-image: url(/img/shopblock-img2.svg);
+    background-position: 100% 100%; 
+    background-repeat: no-repeat;
+    background-size: 83%;
+  }
+}
+
 .shops{
   display: flex;
+  column-gap: 2%;
+  &-item{
+    & img {
+      border-radius: 20px;
+    }
+    &-information{
+      & span img{
+        margin-right: 10px;
+        display: inline;
+        vertical-align: middle;
+      }
+    }
+  }
 }
 
 /* 5 блок */
 .locations{
+  width: 80%;
   display: flex;
+  column-gap: 4%;
+  &-areas{
+    width: 33%;
+
+  }
+
 }
