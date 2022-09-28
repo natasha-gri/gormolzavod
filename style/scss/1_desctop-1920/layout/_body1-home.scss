@@ -120,83 +120,66 @@ padding-bottom: 70px;
 
 /* 1 блок */
 
-.products{
+.product-value-card {
+  //margin-left: 35px;
+}
+.product-text-card {
+  //margin-left: 35px;
+}
+.product-link-card {
+  //margin-left: 35px;
+}
+
+.products{    
   display: flex;
   flex-direction: column;
-  align-items: center;
-    
+    align-items: center;
   &-cols{
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    row-gap: 80px;
+    row-gap: 20px;
     column-gap: 2%;  
-    margin-bottom: 88px;
+    margin-bottom: 50px;
   ////////////////////
   &-col{
     width: 23%;
+    min-height: 288px;
+    padding: 10px 5px 15px 10px;
     box-sizing: border-box;
-    position: relative;
-    
-    &-img1{    
-      width: 40%;
-      padding-left: 2%;
-      padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: $product-card-color;  
+    border-radius: 15px;
+    background-color: $product-card-color;      
+    background-image: url(/img/product-card-img.svg);
+    background-position: right 103%; 
+    background-repeat: no-repeat;
+    background-size: 35%;
+    &-img1{   
+      width: 100%;
+      height: 100%;
+      margin-bottom: 5px;
+      object-fit: contain;
       display: flex;
       justify-content: center;
-      position: absolute;
-      bottom: -45px;
+      align-items: center;
+      bottom: 0px;
+      left: 0;
       & img{
       }        
     }
-
     &-grey1{
-      padding: 15px 5px 15px 0;
-      display: flex;
-      justify-content: flex-end;
-      background-color: $product-card-color;      
-      background-image: url(/img/product-card-img.svg);
-      background-position: right 106%; 
-      background-repeat: no-repeat;
-      background-size: 25%;
-      border-radius: 15.3722px;
       &-cont{
-        width: 60%;
+        width: 100%;
       }
     }
-
-    &-img2{    
-      width: 60%;
-      padding-left: 2%;
-      padding-right: 2%;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      bottom: -45px;
-      & img{
-      }        
-    }
-
-    &-grey2{
-      padding: 15px 5px 15px 0;
-      display: flex;
-      justify-content: flex-end;
-      background-color: $product-card-color;      
-      background-image: url(/img/product-card-img.svg);
-      background-position: right 106%; 
-      background-repeat: no-repeat;
-      background-size: 25%;
-      border-radius: 15.3722px;
-      &-cont{
-        width: 94%;
-      }
-    }
-
   }
   //////////////////////
-  &-gap{
-      width: 5%;
-  }
+}
+&-btn{
+    //height: 70px;
 }
 }
 

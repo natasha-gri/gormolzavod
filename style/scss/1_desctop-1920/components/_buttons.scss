@@ -78,6 +78,8 @@
   border-radius: 22px;
   box-shadow: $box-shadow-btn;
 
+  display: block;
+
   &:hover {
     color: $btn-text;
     background-color: lighten($btn-page, 5%);
