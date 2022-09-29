@@ -24,7 +24,7 @@ h2 {
   font-style: normal;
   line-height: 120%;
   letter-spacing: 0.025em;
-  //text-transform: uppercase;
+  text-transform: uppercase;
   text-align: center;
   color: $text-color-green;
   margin-bottom: $section-margin-bottomn;
@@ -156,7 +156,7 @@ a {
   line-height: 100%;
   text-align: left;
   letter-spacing: 0.025em;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   color: $product-name-card;
 }
 

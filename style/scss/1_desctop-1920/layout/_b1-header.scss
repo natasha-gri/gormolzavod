@@ -1,5 +1,5 @@
 /* Верхнее меню */
-/* фиксация, цвет */
+/* под WP */
 .top-header{
   width: 100%;
   min-height: 85px;
@@ -16,10 +16,6 @@
       position: absolute;
       z-index: 1;
       top: 0;
-      & a {
-        // position: absolute;
-        // z-index: 1;
-      }
     }
   }
 }
@@ -28,23 +24,41 @@
   display: none;
 }
 
-////////////////////
-.main-header-menu{
-  &-wrp{
+.menu{
+  display: flex;
+  list-style: none;
+  &-item a{
+    min-width: 170px;
+    margin-top: 30px;
+    margin-bottom: 0;
     display: flex;
-    
-    //outline: 1px solid rgb(10, 10, 216);
-    &-link{
-      min-width: 170px;
-      padding-left: 30px;
-      padding-right: 30px;
-      margin-top: 30px;
-      margin-bottom: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      //outline: 1px solid rgb(167, 181, 17);      
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @extend .text-basic;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    &:hover {
+      color: white;
+      &::after {
+        transform: translateY(2px) scale(1);
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 55%;
+      top: 22px;
+      height: 1px;
+      background: white;
+      transform: translateY(2px) scale(0);
+      -webkit-transition: all 0.1s;
+      transition: all 0.1s;
     }
   }
 }

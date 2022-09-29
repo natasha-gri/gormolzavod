@@ -11,13 +11,11 @@
 
     .mobile-logo{
         display: block;
-        // margin-top: -85px;
     }
 
     /////////////////
-    .main-header-menu {
-    //position: relative;
-    &-wrp{
+   
+    .menu{
         z-index: 1;
         visibility: hidden;
         flex-direction: column;
@@ -25,21 +23,27 @@
         right: 0px;
         top: 85px;
         background-color: rgba(255, 255, 255, 0.9);
-        &-link{
+        backdrop-filter: blur(3px);
+        &-item{
             min-width: 275px;
             margin-top: 0;
-            padding: 30px 40px;
-        p{
-            &:hover{
-            &::before {
-            display: none;
-            }
-            }
-        }
-        }
+            // padding: 30px 40px;
+            & a{
+                padding: 30px 40px;
+                margin-top: 0;
+                font-weight: 600;
+                color: $text-color-dark1;
+                &:hover{
+                    color: $text-color-dark1;                
+                }
+                &:after{
+                    top: 56px;
+                    background: $text-color-dark1; 
+                }
+        } 
+      }
     }
-    }
-    
+  
     .main-header-menu-label {
     display: block;
     width: 60px;
@@ -51,8 +55,8 @@
     background-size: 100%;
     background-position: 0 0;
     }
-    // дублирую на 926
-    .main-header-menu-input[type="checkbox"]:checked ~ .main-header-menu-wrp {
+    
+    .main-header-menu-input[type="checkbox"]:checked ~ .main-header-menu-wrp ul{
     height: auto;
     visibility: visible;
     }
