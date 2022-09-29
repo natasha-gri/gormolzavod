@@ -8,14 +8,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     &-logocont {
-      position: relative;
       width: 142px;
       display: flex;
       justify-content: center;
+      position: absolute;
+      z-index: 1;
+      top: 0;
       & a {
-        position: absolute;
-        z-index: 1;
+        // position: absolute;
+        // z-index: 1;
       }
     }
   }

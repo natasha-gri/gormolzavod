@@ -151,8 +151,8 @@ a {
   margin-bottom: 6px;
   @extend .first-font;
   font-style: normal;
-  font-weight: 300;
-  font-size: 1.875em; //30
+  font-weight: 600;
+  font-size: 1.3em; //20.8
   line-height: 100%;
   text-align: left;
   letter-spacing: 0.025em;
@@ -160,17 +160,17 @@ a {
   color: $product-name-card;
 }
 
-.text-value-card {
-  margin-bottom: 6px;
-  @extend .first-font;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 1.625em; //26
-  line-height: 100%;
-  text-align: left;
-  letter-spacing: 0.025em;
-  color: $product-name-card;
-}
+// .text-value-card {
+//   margin-bottom: 6px;
+//   @extend .first-font;
+//   font-style: normal;
+//   font-weight: 300;
+//   font-size: 1.625em; //26
+//   line-height: 100%;
+//   text-align: left;
+//   letter-spacing: 0.025em;
+//   color: $product-name-card;
+// }
 
 .text-text-card {
   margin-bottom: 6px;

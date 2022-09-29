@@ -1,14 +1,17 @@
 @media (max-width: 768px) {
-    .top-header-content{
-        justify-content: space-between;
-        &-logocont{
-            display: none;
+    .top-header{
+        &-content{
+            min-height: 85px;
+            justify-content: space-between;
+            &-logocont{
+                display: none;
+            }
         }
     }
 
     .mobile-logo{
         display: block;
-        margin-top: -85px;
+        // margin-top: -85px;
     }
 
     /////////////////
@@ -41,6 +44,9 @@
     display: block;
     width: 60px;
     height: 60px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
     background-image: url(/img/menu.svg);
     background-size: 100%;
     background-position: 0 0;
