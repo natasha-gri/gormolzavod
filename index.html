@@ -7,7 +7,9 @@
     <title>ГорМолокоЗавод</title>
     <link rel="stylesheet" href="/style/css/reset.css">
     <link rel="stylesheet" href="/style/css/fonts.css">
+    <link rel="stylesheet" href="/style/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/style/css/style.css">
+    <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -62,31 +64,84 @@
           <!-- Обложка -->
             <section>
                 <!-- цвет фона, высота + падинги сверху-снизу-->
-                <div class="cover padding-block-cover">
+                <div class="cover padding-block-cover swiper image-slider slider-cover">
 
-                    <!-- Слайдер -->
-                    <div class="cover-slider">
-                        <img src="/img/milk-1-cover-slider.png" alt="#">
-                        <div class="cover-slider-content">
-                            <div class="cover-slider-content-row">
-                                <p>Калории</p>
-                                <p>62ккал</p>
-                            </div>
-                            <div class="cover-slider-content-row">
-                                <p>Протеин</p>
-                                <p>3,2г</p>
-                            </div>
-                            <div class="cover-slider-content-row">
-                                <p>Витамин D</p>
-                                <p>0,05мкг</p>
-                            </div>
-                            <div class="cover-slider-content-row">
-                                <p>Кальций</p>
-                                <p>120мг</p>
-                            </div>
+                    <!-- Слайдер обложки -->
+                    <div class="swiper-wrapper slider-cover-wrapper">
+                        <!-- Слайды -->
+                        <div class="swiper-slide slide-cover-width">
+                            <img class="slider-cover-slide-1" src="" alt="">
                         </div>
-                        <button class="cover-slider-btn">Молоко</button>
+                        <div class="swiper-slide slide-cover-width">
+                            <img class="slider-cover-slide-2" src="" alt="">
+                        </div>
+                        <div class="swiper-slide slide-cover-width">
+                            <img class="slider-cover-slide-3" src="" alt="">
+                        </div>
+                        <div class="swiper-slide slide-cover-width">
+                            <img class="slider-cover-slide-4" src="" alt="">
+                        </div>
+                        <div class="swiper-slide slide-cover-width">
+                            <img class="slider-cover-slide-5" src="" alt="">
+                        </div>
                     </div>
+
+                    <!-- Слайдер боковой-->
+                    <div class="swiper image-slider slider-right v-slider-right">
+                        <div class="swiper-wrapper slider-right-wrapper ">
+                            <!-- Clide 1 -->
+                            <div class="swiper-slide slide-right-width v-slider-right-img">
+                                <img class="slider-right-slide-1" src="" alt="">
+                                <div class="v-slider-right-content">
+                                    <div class="v-slider-right-content-row">
+                                        <p>Калории</p>
+                                        <p>62ккал</p>
+                                    </div>
+                                    <div class="v-slider-right-content-row">
+                                        <p>Протеин</p>
+                                        <p>3,2г</p>
+                                    </div>
+                                    <div class="v-slider-right-content-row">
+                                        <p>Витамин D</p>
+                                        <p>0,05мкг</p>
+                                    </div>
+                                    <div class="v-slider-right-content-row">
+                                        <p>Кальций</p>
+                                        <p>120мг</p>
+                                    </div>
+                                </div>
+                                <div class="v-slider-right-nameproduct">Молоко</div>
+                            </div>
+                            <!-- Clide 2 -->
+                            <div class="swiper-slide slide-right-width">
+                                <img class="slider-right-slide-2  v-slider-right-img" src="" alt="">
+                                <div class="v-slider-right-content">
+                                    <div class="v-slider-right-content-row">
+                                        <p>Калории</p>
+                                        <p>62ккал</p>
+                                    </div>
+                                    <div class="v-slider-right-content-row">
+                                        <p>Протеин</p>
+                                        <p>3,2г</p>
+                                    </div>
+                                    <div class="v-slider-right-content-row">
+                                        <p>Витамин D</p>
+                                        <p>0,05мкг</p>
+                                    </div>
+                                    <div class="v-slider-right-content-row">
+                                        <p>Кальций</p>
+                                        <p>120мг</p>
+                                    </div>
+                                </div>
+                                <div class="v-slider-right-nameproduct">Молоко</div>
+                            </div>
+                            
+                        </div>
+                        <!-- Cтрелка управления -->
+                        <button class="swiper-button-next v-slider-right-btn"></button>
+                    </div>
+
+
 
                     <!-- центрирование контента по высоте и ширине + границы сетки-->
                     <div class="cover-cont container-rows">

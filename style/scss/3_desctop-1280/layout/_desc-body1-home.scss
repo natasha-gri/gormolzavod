@@ -1,9 +1,17 @@
 @media (max-width : 1280px) {
     .cover {
         background-image: url(/img/cover-1280.jpg);
-        &-slider{
-            width: 295px;
-        }
+        // &-slider{
+        //     width: 295px;
+        // }
+    }
+
+    .slider-right{
+        display: none;
+    }
+    
+    .cover-cont-wrap{
+        width: 47%;
     }
 
     .blockwhite-cont {

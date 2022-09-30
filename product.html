@@ -7,48 +7,62 @@
     <title>ГорМолокоЗавод</title>
     <link rel="stylesheet" href="/style/css/reset.css">
     <link rel="stylesheet" href="/style/css/fonts.css">
+    <link rel="stylesheet" href="/style/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/style/css/style.css">
+    <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
     <div class="main-container">
         <header>
-          <!-- Верхнее меню -->
-          <!-- Фиксация сверху, цвет фона + центрирование по вертикали-->
-          <div class="top-header padding-block-header">
-            <!-- центрирование по сторонам блока + границы сетки -->
-            <div class="top-header-content container-rows">
-                <!-- Лого -->
-                <div class="top-header-content-logocont mobile-logo">
-                    <a href="/index.html" class="top-header-content-logocont-logo"><img src="/img/logo.svg" alt="logo" width="121">
-                    </a>
+            <!-- Верхнее меню -->
+            <!-- Фиксация сверху, цвет фона + центрирование по вертикали-->
+            <div class="top-header padding-block-header">
+              <!-- центрирование по сторонам блока + границы сетки -->
+              <div class="top-header-content container-rows">
+                  <!-- Лого мобильное-->
+                  <div class="top-header-content-logocont mobile-logo">
+                      <a href="/index.html" class="top-header-content-logocont-logo"><img src="/img/logo.svg" alt="logo" width="121">
+                      </a>
+                  </div>
+  
+                  <!-- Лого -->
+                  <div class="top-header-content-logocont">
+                      <a href="/index.html" class="top-header-content-logocont-logo"><img src="/img/logo.svg" alt="logo" width="121">
+                      </a>
+                  </div>
+  
+                <!-- Меню -->
+                <div id="mainMenu" class="main-header-menu">
+                <label for="menu" class="main-header-menu-label"></label>
+                <input id="menu" type="checkbox" class="main-header-menu-input">
+                  <!-- Меню десктоп под WP-->
+                  <nav class="main-header-menu-wrp" id="#">
+                      <ul class="menu">
+                          <li class="menu-item">
+                              <a href="/page.html">Продукция</a>
+                          </li>
+                          <li class="menu-item">
+                              <a href="/page.html">Новости</a>
+                          </li>
+                          <li class="menu-item">
+                              <a href="/page.html">Главная</a>
+                          </li>
+                          <li class="menu-item">
+                              <a href="/page.html">О нас</a>
+                          </li>
+                          <li class="menu-item">
+                              <a href="/page.html">Контакты</a>
+                          </li>
+                      </ul>
+                      
+                  </nav>
+                  <!-- Меню END -->
                 </div>
-
-              <!-- Меню -->
-              <div id="mainMenu" class="main-header-menu">
-              <label for="menu" class="main-header-menu-label"></label>
-              <input id="menu" type="checkbox" class="main-header-menu-input">
-                <!-- Меню реализовано на JS -->
-                <nav class="main-header-menu-wrp" id="#">
-                    <a href="/index.php" class="main-header-menu-wrp-link menu-link">Продукция</a>
-                    <a href="/pages/contacts.php" class="main-header-menu-wrp-link menu-link">Новости</a>
-                    
-
-                    <!-- Лого -->
-                    <div class="top-header-content-logocont">
-                        <a href="/index.html" class="top-header-content-logocont-logo"><img src="/img/logo.svg" alt="logo" width="121">
-                        </a>
-                    </div>
-
-                    <a href="/pages/contacts.php" class="main-header-menu-wrp-link menu-link">О нас</a>
-                    <a href="/pages/contacts.php" class="main-header-menu-wrp-link menu-link">Контакты</a>
-                </nav>
-                <!-- Меню реализовано на JS -->
               </div>
             </div>
-          </div>
 
-        </header>
+          </header>
 
         <main>
             
@@ -58,19 +72,32 @@
                 <div class="padding-block-text"> 
                     <!-- стили контента + границы сетки -->
                     <div class="whiteblock product-cont container-rows">
-                        <!-- Слайдер -->
-                        <div class="product-cont-slider">
-                            <div class="product-cont-slider-wrap">
-                                <button class="btn-slider-left"></button>
-                                <img src="/img/milk-1-productcard.png" alt="#">
-                                <button class="btn-slider-right"></button>
+                                              
+                        <!-- Главный контейнер слайдера -->
+                        <div class="swiper image-slider slider-product">
+                            <!-- Обязательная оболочка -->
+                            <div class="swiper-wrapper">
+                    
+                                <!-- Слайды -->
+                                <div class="swiper-slide slider-product-width">
+                                    <img src="/img/slider-product/milk-pack-3.2-1-productcard.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-product-width">
+                                    <img src="/img/slider-product/milk-pack-3.2-2-productcard.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-product-width">
+                                    <img src="/img/slider-product/milk-pack-3.2-3-productcard.jpg" alt="#">
+                                </div>                    
                             </div>
-                            <div class="product-cont-slider-pagination">
-                                <a href="#" class="product-cont-slider-pagination-circle"></a>
-                                <a href="#" class="product-cont-slider-pagination-circle-active"></a>
-                                <a href="#" class="product-cont-slider-pagination-circle"></a>
-                            </div>
-                        </div>                        
+                    
+                            <!-- пагинация -->
+                            <div class="swiper-pagination product-swiper-pagination"></div>
+                    
+                            <!-- стрелки управления -->                           
+                            <div class="btn-left-slider-product swiper-button-prev"></div>
+                            <div class="btn-right-slider-product swiper-button-next"></div>
+                    
+                        </div> 
                         
                         <!-- Описание продукта -->
                         <div class="product-cont-text">
@@ -167,20 +194,55 @@
                     <!-- стили контента + границы сетки -->
                     <div class="whiteblock container-rows">
                         <h2>Процесс производства</h2> 
-                        <!-- Слайдер -->
-                        <div class="work-slider">
-                            <div class="work-slider-wrap">
-                                <button class="btn-slider-left"></button>
-                                <div class="work-slider-wrap-mainfoto"><img src="/img/slider-page/slider-foto-1.jpg" alt="#"></div>
-                                <button class="btn-slider-right"></button>
-                            </div>
-                            <div class="work-slider-circle">
-                                <img src="/img/slider-page/slider-foto-1.jpg" alt="">
-                                <img src="/img/slider-page/slider-foto-1.jpg" alt="">
-                                <img src="/img/slider-page/slider-foto-1.jpg" alt="">
-                                <img src="/img/slider-page/slider-foto-1.jpg" alt="">
-                                <img src="/img/slider-page/slider-foto-1.jpg" alt="">
-                            </div>
+                        
+                        <!-- Слайдер процесса -->
+                        <!-- Большие по одной -->
+                        <div class="swiper image-slider slider-process">
+                            <!-- Обязательная оболочка -->
+                            <div class="swiper-wrapper slider-process-wrap">
+                                <!-- Слайды -->
+                                <div class="swiper-slide slider-process-width">
+                                    <img src="/img/slider-page/slider-foto-1.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-width">
+                                    <img src="/img/slider-page/slider-foto-2.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-width">
+                                    <img src="/img/slider-page/slider-foto-1.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-width">
+                                    <img src="/img/slider-page/slider-foto-2.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-width">
+                                    <img src="/img/slider-page/slider-foto-1.jpg" alt="#">
+                                </div>
+                            </div>                                                
+                            <!-- стрелки управления -->
+                            <div class="btn-left-slider-product swiper-button-prev"></div>
+                            <div class="btn-right-slider-product swiper-button-next"></div>                      
+                        </div> 
+                         <!-- Маленькие в ряд -->
+                        <div class="swiper image-slider slider-process-mini">
+                            <!-- Обязательная оболочка -->
+                            <div class="swiper-wrapper slider-process-mini-wrap">
+                                <!-- Слайды -->
+                                <div class="swiper-slide slider-process-mini-wrap-width">
+                                    <img src="/img/slider-page/slider-foto-1.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-mini-wrap-width">
+                                    <img src="/img/slider-page/slider-foto-2.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-mini-wrap-width">
+                                    <img src="/img/slider-page/slider-foto-1.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-mini-wrap-width">
+                                    <img src="/img/slider-page/slider-foto-2.jpg" alt="#">
+                                </div>
+                                <div class="swiper-slide slider-process-mini-wrap-width">
+                                    <img src="/img/slider-page/slider-foto-1.jpg" alt="#">
+                                </div> 
+                            </div>                                                
+                                               
                         </div>
                     </div>
                   

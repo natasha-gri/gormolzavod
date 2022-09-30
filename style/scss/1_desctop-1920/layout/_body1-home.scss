@@ -51,66 +51,22 @@ padding-bottom: 70px;
 /* 1-Обложка */
 .cover {
   height: 725px;
-
   position: relative;
-
-  background-color: $maincolor;
-  background-image: url(/img/cover.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  &-slider{
-    width: 320px;
-    height: 100%;
-    padding-top: 44px;
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(58, 58, 58, 0.31);
-    backdrop-filter: blur(10px);
-    &-content {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      &-row {
-        display: flex;
-        width: 80%;
-        & p{
-          &:nth-child(1) {
-            width: 50%;
-          }
-          &:nth-child(2) {
-            width: 50%;
-            text-align: right;
-          }
-        }
-      }
-    }
-    &-btn {
-      width: 100%;
-      padding-top: 24px;
-      padding-bottom: 43px;
-      background-color: $main-color-green;
-      border: none;
-    }
-  }
+  background-color: $main-color-green;
+  
   &-cont{
-    height: 725px;
+    height: 725px;    
     &-wrap{
-      width: 50%;
+      width: 33.5%;
       height: 100%;
       padding-left: 28px;
       padding-right: 20px;
-
+      position: absolute;
+      z-index: 2;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-
       background-color: rgba(58, 58, 58, 0.31);
       backdrop-filter: blur(10px);
     }
@@ -118,17 +74,118 @@ padding-bottom: 70px;
   }
 }
 
-/* 1 блок */
+//************* Боковой лайдер обложки
+.v-slider-right{
+  width: 320px;
+  height: 100%;
+  padding-top: 44px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(58, 58, 58, 0.31);
+  backdrop-filter: blur(10px);
+  &-content {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-row {
+      display: flex;
+      width: 80%;
+      & p{
+        &:nth-child(1) {
+          width: 50%;
+        }
+        &:nth-child(2) {
+          width: 50%;
+          text-align: right;
+        }
+      }
+    }
+  }
+  &-nameproduct{
+    padding-top: 20px;
+    @extend .second-font;
+    font-size: 1.4em; //24px
+    line-height: 161%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: $main-color-green;
+  }
+  &-btn {
+    width: 100%;
+    height: 55px;
+    // padding-top: 24px;
+    // padding-bottom: 43px;
+    display: block;
+    background-color: $main-color-green;
+    border: none;
+  }
+}
+// ************* Боковой лайдер обложки END
+.slider-right{
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+.slide-right-width{
+  min-width: 0;
+}
+.slider-right-size{
+  height: 325px;
+  margin-bottom: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slider-right-slide-1{
+  @extend .slider-right-size;
+  background-image: url("/img/milk-1-cover-slider.png");
+}
+.slider-right-slide-2{
+  @extend .slider-right-size;
+  background-image: url("/img/milk-1-cover-slider.png");
+}
 
-.product-value-card {
-  //margin-left: 35px;
+// ************* Главный слайдер обложки
+.slider-cover-wrapper{
+  position: absolute;
+  z-index: 1;
 }
-.product-text-card {
-  //margin-left: 35px;
+.slide-cover-width{
+  min-width: 0;
 }
-.product-link-card {
-  //margin-left: 35px;
+.slider-cover-slide-size{
+  height: 725px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.slider-cover-slide-1{
+  @extend .slider-cover-slide-size;
+  background-image: url("/img/slider-cover/foto1.jpg");
+}
+.slider-cover-slide-2{
+  @extend .slider-cover-slide-size;
+  background-image: url("/img/slider-cover/foto2.jpg");
+}
+.slider-cover-slide-3{
+  @extend .slider-cover-slide-size;
+  background-image: url("/img/slider-cover/foto3.jpg");
+}
+.slider-cover-slide-4{
+  @extend .slider-cover-slide-size;
+  background-image: url("/img/slider-cover/foto4.jpg");
+}
+.slider-cover-slide-5{
+  @extend .slider-cover-slide-size;
+  background-image: url("/img/slider-cover/foto5.jpg");
+}
+// ************* Главный слайдер обложки END
+
+/* 1 блок */
 
 .products{    
   display: flex;
