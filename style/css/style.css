@@ -728,52 +728,37 @@ main {
     border-radius: 50%;
     background-color: #878787; }
 
-.slider-process {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-  .slider-process-wrap {
-    width: 100%;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center; }
+.v-swiper-slide {
+  background-size: cover;
+  background-position: center; }
 
-.slider-process-width {
+.v-slider-proc-main {
+  width: 100%;
+  height: auto; }
+
+.big-wrapper {
+  height: 450px; }
+
+.v-slider-proc-mini {
   width: 80%;
-  height: auto;
-  display: flex;
-  justify-content: center; }
-
-.slider-process-mini {
-  width: 68%;
   height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-  .slider-process-mini-wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    object-fit: contain; }
-    .slider-process-mini-wrap-width {
-      width: 19.2%;
-      height: 100px;
-      padding: 7px; }
-      .slider-process-mini-wrap-width img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 15px; }
+  box-sizing: border-box;
+  padding: 10px 0; }
 
-.slider-process-width {
-  width: 80%;
-  height: auto;
-  display: flex;
-  justify-content: center; }
+.v-slider-proc-mini .v-swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4; }
+
+.v-slider-proc-mini .swiper-slide-thumb-active {
+  opacity: 1; }
+
+.v-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px; }
 
 .wiki-cont-text {
   display: flex;
@@ -781,33 +766,6 @@ main {
   .wiki-cont-text p {
     width: 50%;
     display: block; }
-
-.work-slider {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-  .work-slider-wrap {
-    width: 100%;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .work-slider-wrap-mainfoto {
-      width: 80%;
-      height: auto;
-      display: flex;
-      justify-content: center; }
-  .work-slider-circle {
-    width: 74%;
-    display: flex;
-    gap: 1%;
-    justify-content: center;
-    object-fit: contain; }
-    .work-slider-circle img {
-      width: 19.2%;
-      border-radius: 15px; }
 
 footer {
   display: flex;

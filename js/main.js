@@ -17,11 +17,10 @@ window.onresize = fontsize;
 const swipercover = new Swiper('.slider-cover', {
     // Optional parameters
     loop: true,
-      // Автопрокрутка
-      autoplay: {
-      delay: 5000,
-       
-    },
+    // Автопрокрутка
+    autoplay: {
+    delay: 5000,
+        },
     // Скорость
     speed: 2000,
     // Эффект
@@ -77,6 +76,7 @@ const swiperProduct = new Swiper('.slider-product', {
     },
 });
 
+// процесс
 const swiperProcessMini = new Swiper('.slider-process-mini', {
     // Optional parameters
     direction: 'horizontal',
@@ -93,9 +93,9 @@ const swiperprocess = new Swiper('.slider-process', {
     spaceBetween: 30,
     loop: true,
     // Автопрокрутка
-    autoplay: {
-    delay: 2000,     
-    },
+    // autoplay: {
+    // delay: 2000,     
+    // },
     // Скорость
     speed: 1000,
     // Стрелки
@@ -103,23 +103,31 @@ const swiperprocess = new Swiper('.slider-process', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    // trumbs: {
-    //     swiper: {
-    //         el: '.slider-process-mini',
-    //         slidesPerView: 5,
-    //     }
-    // },
     trumbs: {
         swiper: swiperProcessMini
     },
+});
+// пример
 
+var sliderprocmini = new Swiper(".slider-proc-mini", {
+  // loop: true,
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var sliderprocmain = new Swiper(".slider-proc-main", {
+  loop: true,
+  spaceBetween: 10,
+
+  
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: sliderprocmini,
+  },
 });
 
-// const swiperProcessMini = new Swiper('.slider-process-mini', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-//     slidesPerView: 5,
-    
-    
-// });

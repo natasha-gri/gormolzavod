@@ -100,65 +100,46 @@
 }
 // Слайдер END
 
-// Слайдер процесса
-.slider-process{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    &-wrap{
-        width: 100%;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-    }
+// Слайдер процесса 
+.v-swiper-slide {
+  background-size: cover;
+  background-position: center;
 }
 
-.slider-process-width {
-    width: 80%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-// Слайдер END
-
-// Слайдер процесса mini
-.slider-process-mini{
-    width: 68%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    &-wrap{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        object-fit: contain;
-        &-width{
-            width: 19.2%;
-            height: 100px;
-            padding: 7px;
-            & img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 15px;
-
-            }
-        }
-    }
+.v-slider-proc-main {
+  width: 100%;
+  height: auto;
 }
 
-.slider-process-width {
-    width: 80%;
-    height: auto;
-    display: flex;
-    justify-content: center;
+.big-wrapper{
+  height: 450px;
 }
-// Слайдер mini END
+
+.v-slider-proc-mini {
+  width: 80%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.v-slider-proc-mini .v-swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.v-slider-proc-mini .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.v-swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+// Слайдер процесса END
 
 .wiki-cont {
     &-text{
@@ -167,38 +148,6 @@
         & p{
             width: 50%;
             display: block;
-        }
-    }
-}
-
-.work-slider{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    &-wrap{
-        width: 100%;
-        margin-bottom: 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-mainfoto{
-            width: 80%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-        }
-    }
-    &-circle{
-        width: 74%;
-        display: flex;
-        gap: 1%;
-        justify-content: center;
-        object-fit: contain;
-        & img{
-            width: 19.2%;
-            border-radius: 15px;
         }
     }
 }
