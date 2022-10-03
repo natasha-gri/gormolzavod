@@ -110,12 +110,12 @@ a {
   letter-spacing: 0.025em;
   text-transform: lowercase;
   color: $links;
-
   &:hover {
     color: darken($links, 10%);
   }
 }
 
+// пункты меню
 .menu-link {
   @extend .text-basic;
   font-weight: 300;

@@ -24,46 +24,126 @@
   display: none;
 }
 
-.menu{
-  display: flex;
-  list-style: none;
-  &-item a{
-    min-width: 170px;
-    margin-top: 30px;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    @extend .text-basic;
-    font-weight: 300;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: white;
-    &:hover {
-      color: white;
-      &::after {
-        transform: translateY(2px) scale(1);
-      }
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 55%;
-      top: 22px;
-      height: 1px;
-      background: white;
-      transform: translateY(2px) scale(0);
-      -webkit-transition: all 0.1s;
-      transition: all 0.1s;
-    }
+// меню под WP
+.menu li {
+  position: relative;
+}
+.menu-list>li {
+  &:hover .sub-menu{
+    display: block;
   }
 }
-
+.sub-menu{  
+  padding-top: 20px !important;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  left:0;
+  top: 42px;
+}
+.sub-menu>li{
+  margin: 0 0 0 0;
+  padding: 15px 10px 16px 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  &:hover{
+    background-color: #a8b9b3a3;
+  }
+}
+.sub-menu>li>a{
+  margin-top: 0;
+  color: $text-color-mebu-sub-link;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1em;
+  text-transform: lowercase;
+  &:hover {
+    color: $text-color-mebu-sub-link;
+  }
+  &:after {
+    content: none;
+  }
+}
+.menu-list{
+  display: flex;
+  list-style: none;
+}
+.menu-item a{
+  min-width: 170px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // настройки шрифта
+  @extend .text-basic;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  &:hover {
+    color: white;
+    &::after {
+      transform: translateY(2px) scale(1);
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 55%;
+    top: 22px;
+    height: 1px;
+    background: white;
+    transform: translateY(2px) scale(0);
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+}
+// меню под WP END
+// бургер
 label,
 #menu {
   display: none;
 }
+// .menu-old{
+//   display: flex;
+//   list-style: none;
+//   &-item a{
+//     min-width: 170px;
+//     margin-top: 30px;
+//     margin-bottom: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+
+//     @extend .text-basic;
+//     font-weight: 300;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     letter-spacing: 0.05em;
+//     color: white;
+//     &:hover {
+//       color: white;
+//       &::after {
+//         transform: translateY(2px) scale(1);
+//       }
+//     }
+//     &:after {
+//       content: '';
+//       position: absolute;
+//       display: block;
+//       width: 55%;
+//       top: 22px;
+//       height: 1px;
+//       background: white;
+//       transform: translateY(2px) scale(0);
+//       -webkit-transition: all 0.1s;
+//       transition: all 0.1s;
+//     }
+//   }
+// }
