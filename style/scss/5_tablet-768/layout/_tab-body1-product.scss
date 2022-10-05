@@ -19,6 +19,15 @@
         }
     }
 
+    // Слайдер продукта
+    .btn-left-slider-hide{
+        display: none;
+    }
+    .btn-right-slider-hide{
+        display: none;
+    }
+  
+
     .wiki-cont{
         &-text{
             flex-direction: column;
@@ -26,6 +35,10 @@
                 width: 100%;
             }
         }
+    }
+
+    .shops-hide{
+        display: none;
     }
 
     .work-slider-hide{

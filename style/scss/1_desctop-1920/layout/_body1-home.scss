@@ -422,6 +422,10 @@ padding-bottom: 70px;
   &-item{
     & img {
       border-radius: 20px;
+      margin-bottom: 15px;
+    }
+    & p {
+      margin-bottom: 0px;
     }
     &-information{
       & span img{

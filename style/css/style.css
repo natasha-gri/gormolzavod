@@ -86,15 +86,13 @@ h2 {
   color: #ffffff; }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.7em;
   font-stretch: normal;
   font-style: normal;
   line-height: 120%;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  text-align: center;
+  letter-spacing: 0em;
   color: #378E6f;
-  margin-bottom: 55px; }
+  margin-bottom: 27px; }
 
 .h2-page {
   margin-top: -10px;
@@ -270,7 +268,9 @@ a {
 .typ-shops-title {
   font-size: 1.75em;
   font-weight: 600;
-  color: #ffffff; }
+  line-height: 1em;
+  color: #ffffff;
+  margin-bottom: 15px !important; }
 
 .typ-shops-information {
   color: #ffffff; }
@@ -314,41 +314,12 @@ a {
 .menu li {
   position: relative; }
 
-.menu-list > li:hover .sub-menu {
-  display: block; }
-
-.sub-menu {
-  padding-top: 20px !important;
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  left: 0;
-  top: 42px; }
-
-.sub-menu > li {
-  margin: 0 0 0 0;
-  padding: 15px 10px 16px 10px;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(3px); }
-  .sub-menu > li:hover {
-    background-color: #a8b9b3a3; }
-
-.sub-menu > li > a {
-  margin-top: 0;
-  color: #235443;
-  font-size: 1.2em;
-  font-weight: 400;
-  text-align: center;
-  line-height: 1em;
-  text-transform: lowercase; }
-  .sub-menu > li > a:hover {
-    color: #235443; }
-  .sub-menu > li > a:after {
-    content: none; }
-
 .menu-list {
   display: flex;
   list-style: none; }
+
+.menu-list > li:hover .sub-menu {
+  display: block; }
 
 .menu-item a {
   min-width: 170px;
@@ -378,6 +349,34 @@ a {
     transform: translateY(2px) scale(0);
     -webkit-transition: all 0.1s;
     transition: all 0.1s; }
+
+.sub-menu {
+  padding-top: 20px !important;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 42px; }
+
+.sub-menu > li {
+  margin: 0 0 0 0;
+  padding: 15px 10px 16px 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px); }
+  .sub-menu > li:hover {
+    background-color: #a8b9b3a3; }
+
+.sub-menu > li > a {
+  margin-top: 0;
+  color: #235443;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1em;
+  text-transform: lowercase; }
+  .sub-menu > li > a:hover {
+    color: #235443; }
+  .sub-menu > li > a:after {
+    content: none; }
 
 label,
 #menu {
@@ -708,7 +707,10 @@ main {
   display: flex;
   column-gap: 2%; }
   .shops-item img {
-    border-radius: 20px; }
+    border-radius: 20px;
+    margin-bottom: 15px; }
+  .shops-item p {
+    margin-bottom: 0px; }
   .shops-item-information span img {
     margin-right: 10px;
     display: inline;
@@ -752,7 +754,8 @@ main {
 
 .slider-product {
   width: 50%;
-  height: 500px; }
+  height: 500px;
+  position: relative; }
 
 .slider-product-width {
   min-width: 0;
@@ -760,11 +763,13 @@ main {
   display: flex;
   justify-content: center; }
 
+.slider-product-width img {
+  object-fit: cover; }
+
 .btn-left-slider-product {
   width: 42px;
   height: 42px;
   margin-left: 30px;
-  top: 220px;
   background-color: #D9D9D9;
   border: none;
   border-radius: 50%; }
@@ -778,7 +783,6 @@ main {
   width: 42px;
   height: 42px;
   margin-right: 30px;
-  top: 220px;
   background-color: #D9D9D9;
   border: none;
   border-radius: 50%; }
@@ -787,6 +791,12 @@ main {
     position: absolute;
     top: -8px;
     right: 11px; }
+
+.btn-left-slider-768 {
+  display: none; }
+
+.btn-right-slider-768 {
+  display: none; }
 
 .product-swiper-pagination {
   bottom: -6px; }
@@ -854,7 +864,6 @@ main {
   flex-wrap: wrap; }
   .news-cols-col {
     width: 49%;
-    min-height: 200px;
     margin-bottom: 15px;
     box-sizing: border-box;
     display: flex;
@@ -1073,7 +1082,10 @@ footer {
       width: 24%; }
 
   .locations {
-    width: 92%; } }
+    width: 92%; }
+
+  .shops {
+    flex-wrap: wrap; } }
 /* 5_tablet-от 480 до 768*/
 @media (max-width: 768px) {
   footer {
@@ -1123,7 +1135,7 @@ footer {
     align-items: center; }
 
   .menu-item a {
-    padding: 30px 40px;
+    padding: 23px 40px;
     margin-top: 0;
     font-weight: 600;
     color: #235443; }
@@ -1133,17 +1145,23 @@ footer {
       top: 56px;
       background: #151515; }
 
+  .menu-list > li:first-child > a {
+    padding-top: 40px; }
+
+  .menu-list > li:last-child > a {
+    padding-bottom: 40px; }
+
   .sub-menu {
     width: 90%;
     padding-top: 0 !important;
     display: block;
     position: relative;
     top: 0;
-    left: 0;
-    background-color: #62887A; }
+    left: 0; }
 
   .sub-menu > li {
-    padding: 0 0 0 0; }
+    padding: 0 0 0 0;
+    background-color: #a8b9b3a3; }
 
   .main-header-menu-label {
     display: block;
@@ -1205,7 +1223,7 @@ footer {
       .benefits-cols-leftcol p {
         text-align: left; }
       .benefits-cols-leftcol-row-title:after {
-        content: none; }
+        display: none; }
       .benefits-cols-leftcol-row-title:before {
         content: url(/img/leaves-title.svg);
         margin-right: 12px; }
@@ -1242,10 +1260,19 @@ footer {
         width: 80%;
         margin: 0 auto; }
 
+  .btn-left-slider-hide {
+    display: none; }
+
+  .btn-right-slider-hide {
+    display: none; }
+
   .wiki-cont-text {
     flex-direction: column; }
     .wiki-cont-text p {
       width: 100%; }
+
+  .shops-hide {
+    display: none; }
 
   .work-slider-hide {
     display: none; } }
@@ -1435,7 +1462,10 @@ footer {
     margin-bottom: 0; } }
 @media (max-width: 360px) {
   .top-header {
-    min-height: 65px; } }
+    min-height: 65px; }
+
+  .menu-item a {
+    padding: 18px 40px; } }
 @media (max-width: 360px) {
   .cover-cont {
     width: 100%; }

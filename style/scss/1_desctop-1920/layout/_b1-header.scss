@@ -28,46 +28,14 @@
 .menu li {
   position: relative;
 }
+.menu-list{
+  display: flex;
+  list-style: none;
+}
 .menu-list>li {
   &:hover .sub-menu{
     display: block;
   }
-}
-.sub-menu{  
-  padding-top: 20px !important;
-  display: none;
-  position: absolute;
-  z-index: 1000;
-  left:0;
-  top: 42px;
-}
-.sub-menu>li{
-  margin: 0 0 0 0;
-  padding: 15px 10px 16px 10px;
-  background-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(3px);
-  &:hover{
-    background-color: #a8b9b3a3;
-  }
-}
-.sub-menu>li>a{
-  margin-top: 0;
-  color: $text-color-mebu-sub-link;
-  font-size: 1.2em;
-  font-weight: 400;
-  text-align: center;
-  line-height: 1em;
-  text-transform: lowercase;
-  &:hover {
-    color: $text-color-mebu-sub-link;
-  }
-  &:after {
-    content: none;
-  }
-}
-.menu-list{
-  display: flex;
-  list-style: none;
 }
 .menu-item a{
   min-width: 170px;
@@ -101,6 +69,37 @@
     transform: translateY(2px) scale(0);
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
+  }
+}
+.sub-menu{  
+  padding-top: 20px !important;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 42px;
+}
+.sub-menu>li{
+  margin: 0 0 0 0;
+  padding: 15px 10px 16px 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  &:hover{
+    background-color: #a8b9b3a3;
+  }
+}
+.sub-menu>li>a{
+  margin-top: 0;
+  color: $text-color-mebu-sub-link;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1em;
+  text-transform: lowercase;
+  &:hover {
+    color: $text-color-mebu-sub-link;
+  }
+  &:after {
+    content: none;
   }
 }
 // меню под WP END

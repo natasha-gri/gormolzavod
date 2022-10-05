@@ -69,7 +69,7 @@
                 &-row{
                     &-title{
                         &:after{
-                            content: none;
+                            display: none;
                         }
                         &:before{
                             content: url(/img/leaves-title.svg);

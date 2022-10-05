@@ -36,15 +36,13 @@ h2 {
 
 h3{
   @extend .first-font;
-  font-size: 2em; //32
+  font-size: 1.7em; //27.2
   font-stretch: normal;
   font-style: normal;
   line-height: 120%;
-  letter-spacing: 0.025em;
-  text-transform: uppercase;
-  text-align: center;
+  letter-spacing: 0em;
   color: $text-color-green;
-  margin-bottom: $section-margin-bottomn;
+  margin-bottom: 27px;
 }
 
 .h2-page {
@@ -283,8 +281,10 @@ a {
   @extend .first-font;
   font-size: 1.75em; //28
   font-weight: 600;
+  line-height: 1em;
   //text-transform: uppercase;
   color: $text-color-white;
+  margin-bottom: 15px !important;
 }
 
 .typ-shops-information{
