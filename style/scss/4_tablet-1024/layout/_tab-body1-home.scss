@@ -43,6 +43,9 @@
 
   .shops{
      flex-wrap: wrap;
+     &-item{
+      width: 49%;
+     }
   }
  
 

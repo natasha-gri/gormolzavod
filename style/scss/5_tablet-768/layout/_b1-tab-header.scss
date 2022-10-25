@@ -1,7 +1,8 @@
 @media (max-width: 768px) {
     .top-header{
+        min-height: 60px;
         &-content{
-            min-height: 85px;
+            min-height: 60px;
             justify-content: space-between;
             &-logocont{
                 display: none;
@@ -13,6 +14,12 @@
         display: block;
     }
 
+    .top-header-content-title{
+      display: block;
+      margin: 0 auto;
+      padding-left: 34px;
+    }
+
     // меню под WP  
         .menu-list{
         width: 100%;
@@ -21,9 +28,8 @@
         flex-direction: column;
         position: absolute;
         right: 0px;
-        top: 85px;
-        background-color: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(3px);
+        top: 60px;
+        background-color: rgb(248, 249, 249);        
       }
       .menu-item{
         display: flex;
@@ -66,11 +72,11 @@
     // бургер
      .main-header-menu-label {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 8px;
     background-image: url(/img/menu.svg);
     background-size: 100%;
     background-position: 0 0;

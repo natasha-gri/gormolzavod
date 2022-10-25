@@ -73,6 +73,29 @@ h3{
   margin-bottom: 55px;
 }
 
+.typ-top-header-content-title p{
+  @extend .first-font;margin-bottom: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 81.38%;
+  text-align: center;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.cover-mobile-content p{
+  @extend .first-font;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
 .v-slider-right-content-row p {
   @extend .second-font;
   font-size: 1.25em; //20px
@@ -106,7 +129,6 @@ a {
   font-style: normal;
   line-height: 169%;
   letter-spacing: 0.025em;
-  text-transform: lowercase;
   color: $links;
   &:hover {
     color: darken($links, 10%);
@@ -279,7 +301,7 @@ a {
 //****************************** 4 блок
 .typ-shops-title{
   @extend .first-font;
-  font-size: 1.75em; //28
+  font-size: 1.2em; 
   font-weight: 600;
   line-height: 1em;
   //text-transform: uppercase;

@@ -49,6 +49,9 @@ padding-bottom: 70px;
 }
 
 /* 1-Обложка */
+.cover-mobile{
+  display: none;
+}
 .cover {
   height: 725px;
   position: relative;
@@ -141,11 +144,15 @@ padding-bottom: 70px;
 }
 .slider-right-slide-1{
   @extend .slider-right-size;
-  background-image: url("/img/milk-1-cover-slider.png");
+  background-image: url("/img/slider-cover-right/milk-cover-slider-right.png");
 }
 .slider-right-slide-2{
   @extend .slider-right-size;
-  background-image: url("/img/milk-1-cover-slider.png");
+  background-image: url("/img/slider-cover-right/smetana-cover-slider-right.png");
+}
+.slider-right-slide-3{
+  @extend .slider-right-size;
+  background-image: url("/img/slider-cover-right/butter-cover-slider-right.png");
 }
 
 // ************* Главный слайдер обложки
@@ -352,7 +359,6 @@ padding-bottom: 70px;
         }
       }
     }
-    
   }
 
   &-quote{
@@ -420,6 +426,7 @@ padding-bottom: 70px;
   display: flex;
   column-gap: 2%;
   &-item{
+    width: 25%;
     & img {
       border-radius: 20px;
       margin-bottom: 15px;

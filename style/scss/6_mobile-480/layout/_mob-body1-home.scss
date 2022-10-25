@@ -29,6 +29,9 @@
         }
       }
   }
+  .cover-mobile-content{
+    padding: 20px 10px 20px 10px;
+  }
 
   .blockwhite-cont{
     background-size: 37%, 37%;
@@ -72,6 +75,13 @@
               right: 42px;
             }
         }
+      }
+    }
+
+    //4 
+    .shops{
+      &-item{
+        width: 100%;
       }
     }
 
