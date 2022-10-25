@@ -19,7 +19,7 @@ const swipercover = new Swiper('.slider-cover', {
     loop: true,
     // Автопрокрутка
     autoplay: {
-    delay: 5000,
+    delay: 4000,
         },
     // Скорость
     speed: 2000,
@@ -28,6 +28,22 @@ const swipercover = new Swiper('.slider-cover', {
     fadeEffect: {
       crossFade: true
     },      
+});
+// слайдер обложки мобильной
+const swiperCoverMobile = new Swiper('.slider-cover-mobile', {
+  // Optional parameters
+  loop: true,
+  // Автопрокрутка
+  autoplay: {
+  delay: 2000,
+      },
+  // Скорость
+  speed: 2000,
+  // Эффект
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },      
 });
 // слайдер обложки с права
 const swiperright = new Swiper('.slider-right', {

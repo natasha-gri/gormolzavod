@@ -9,6 +9,15 @@
       }
   }
 
+  .slider-cover-mobile-slide-size{
+    height: 40vh;
+  }
+  .cover-mobile{
+    &-slides{
+        width: 100%;
+        height: 40vh; 
+    }
+}
   // 2
   .greenblock-bgimg{
     &-img1{

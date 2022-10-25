@@ -607,26 +607,48 @@ main {
 .slide-cover-width {
   min-width: 0; }
 
-.slider-cover-slide-size, .slider-cover-slide-1, .slider-cover-slide-2, .slider-cover-slide-3, .slider-cover-slide-4, .slider-cover-slide-5 {
+.slider-cover-slide-size, .slider-cover-slide-1, .slider-cover-slide-2, .slider-cover-slide-3, .slider-cover-slide-4 {
   height: 725px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .slider-cover-slide-1 {
-  background-image: url("/img/slider-cover/foto1.jpg"); }
+  background-image: url("/img/slider-cover/foto9.jpg"); }
 
 .slider-cover-slide-2 {
-  background-image: url("/img/slider-cover/foto2.jpg"); }
+  background-image: url("/img/slider-cover/foto8.jpg"); }
 
 .slider-cover-slide-3 {
-  background-image: url("/img/slider-cover/foto3.jpg"); }
+  background-image: url("/img/slider-cover/foto7.jpg"); }
 
 .slider-cover-slide-4 {
-  background-image: url("/img/slider-cover/foto4.jpg"); }
+  background-image: url("/img/slider-cover/foto6.jpg"); }
 
-.slider-cover-slide-5 {
-  background-image: url("/img/slider-cover/foto5.jpg"); }
+.slider-cover-mobile-wrapper {
+  position: absolute;
+  z-index: 1; }
+
+.slide-cover-mobile-width {
+  min-width: 0; }
+
+.slider-cover-mobile-slide-size, .slider-cover-mobile-slide-1, .slider-cover-mobile-slide-2, .slider-cover-mobile-slide-3, .slider-cover-mobile-slide-4 {
+  height: 514px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.slider-cover-mobile-slide-1 {
+  background-image: url("/img/slider-cover/fotomobile4.jpg"); }
+
+.slider-cover-mobile-slide-2 {
+  background-image: url("/img/slider-cover/fotomobile3.jpg"); }
+
+.slider-cover-mobile-slide-3 {
+  background-image: url("/img/slider-cover/fotomobile2.jpg"); }
+
+.slider-cover-mobile-slide-4 {
+  background-image: url("/img/slider-cover/fotomobile1.jpg"); }
 
 /* 1 блок */
 .products {
@@ -1464,13 +1486,9 @@ footer {
 
   .cover-mobile {
     display: block; }
-    .cover-mobile-img {
+    .cover-mobile-slides {
       width: 100%;
-      height: 40vh;
-      margin-bottom: 20px;
-      background-image: url(/img/cover-mobile.jpg);
-      background-size: cover;
-      background-position: 50% 50%; }
+      height: 514px; }
     .cover-mobile-content {
       padding: 20px 20px 20px 20px;
       outline: 1px solid white;
@@ -1830,6 +1848,13 @@ footer {
     .cover-cont-wrap {
       width: 100%;
       height: 74%; }
+
+  .slider-cover-mobile-slide-size, .slider-cover-mobile-slide-1, .slider-cover-mobile-slide-2, .slider-cover-mobile-slide-3, .slider-cover-mobile-slide-4 {
+    height: 40vh; }
+
+  .cover-mobile-slides {
+    width: 100%;
+    height: 40vh; }
 
   .greenblock-bgimg-img1 {
     width: 147px;

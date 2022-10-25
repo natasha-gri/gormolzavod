@@ -171,25 +171,53 @@ padding-bottom: 70px;
 }
 .slider-cover-slide-1{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto1.jpg");
+  background-image: url("/img/slider-cover/foto9.jpg");
 }
 .slider-cover-slide-2{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto2.jpg");
+  background-image: url("/img/slider-cover/foto8.jpg");
 }
 .slider-cover-slide-3{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto3.jpg");
+  background-image: url("/img/slider-cover/foto7.jpg");
 }
 .slider-cover-slide-4{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto4.jpg");
-}
-.slider-cover-slide-5{
-  @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto5.jpg");
+  background-image: url("/img/slider-cover/foto6.jpg");
 }
 // ************* Главный слайдер обложки END
+
+// ************* Главный слайдер обложки мобильной
+.slider-cover-mobile-wrapper{
+  position: absolute;
+  z-index: 1;
+}
+.slide-cover-mobile-width{
+  min-width: 0;
+}
+.slider-cover-mobile-slide-size{
+  height: 514px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-cover-mobile-slide-1{
+  @extend .slider-cover-mobile-slide-size;
+  background-image: url("/img/slider-cover/fotomobile4.jpg");
+}
+.slider-cover-mobile-slide-2{
+  @extend .slider-cover-mobile-slide-size;
+  background-image: url("/img/slider-cover/fotomobile3.jpg");
+}
+.slider-cover-mobile-slide-3{
+  @extend .slider-cover-mobile-slide-size;
+  background-image: url("/img/slider-cover/fotomobile2.jpg");
+}
+.slider-cover-mobile-slide-4{
+  @extend .slider-cover-mobile-slide-size;
+  background-image: url("/img/slider-cover/fotomobile1.jpg");
+}
+// ************* Главный слайдер обложки мобильной END
 
 /* 1 блок */
 
