@@ -351,7 +351,7 @@ a {
               justify-content: center;
       position: absolute;
       z-index: 10;
-      top: 0; }
+      top: -7px; }
 
 .mobile-logo {
   display: none; }
@@ -588,7 +588,7 @@ main {
 
 .slider-right-size, .slider-right-slide-1, .slider-right-slide-2, .slider-right-slide-3 {
   height: 325px;
-  margin: 0 auto 14px auto;
+  margin: 0 auto 16px auto;
   -o-object-fit: cover;
      object-fit: cover; }
 
