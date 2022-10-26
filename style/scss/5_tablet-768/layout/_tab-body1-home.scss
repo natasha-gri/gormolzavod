@@ -31,10 +31,12 @@
 
     .cover-mobile{
         display: block;
-        
-        &-slides{
-            width: 100%;
+        &-slides{            
             height: 514px; 
+            background-image: url(/img/slider-cover/fotomobile4.jpg);
+            background-position: center; 
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &-content{
             padding: 20px 20px 20px 20px;

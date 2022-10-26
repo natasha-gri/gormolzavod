@@ -56,6 +56,7 @@ padding-bottom: 70px;
   height: 725px;
   position: relative;
   background-color: $main-color-green;
+  background-image: url(/img/slider-cover/foto9.jpg);
   
   &-cont{
     height: 725px;    
@@ -138,21 +139,17 @@ padding-bottom: 70px;
 }
 .slider-right-size{
   height: 325px;
-  margin-bottom: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin: 0 auto 14px auto;
+  object-fit: cover;
 }
 .slider-right-slide-1{
   @extend .slider-right-size;
-  background-image: url("/img/slider-cover-right/milk-cover-slider-right.png");
 }
 .slider-right-slide-2{
   @extend .slider-right-size;
-  background-image: url("/img/slider-cover-right/smetana-cover-slider-right.png");
 }
 .slider-right-slide-3{
   @extend .slider-right-size;
-  background-image: url("/img/slider-cover-right/butter-cover-slider-right.png");
 }
 
 // ************* Главный слайдер обложки
@@ -165,25 +162,19 @@ padding-bottom: 70px;
 }
 .slider-cover-slide-size{
   height: 725px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
 }
 .slider-cover-slide-1{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto9.jpg");
 }
 .slider-cover-slide-2{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto8.jpg");
 }
 .slider-cover-slide-3{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto7.jpg");
 }
 .slider-cover-slide-4{
   @extend .slider-cover-slide-size;
-  background-image: url("/img/slider-cover/foto6.jpg");
 }
 // ************* Главный слайдер обложки END
 
@@ -197,25 +188,19 @@ padding-bottom: 70px;
 }
 .slider-cover-mobile-slide-size{
   height: 514px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
 }
 .slider-cover-mobile-slide-1{
   @extend .slider-cover-mobile-slide-size;
-  background-image: url("/img/slider-cover/fotomobile4.jpg");
 }
 .slider-cover-mobile-slide-2{
   @extend .slider-cover-mobile-slide-size;
-  background-image: url("/img/slider-cover/fotomobile3.jpg");
 }
 .slider-cover-mobile-slide-3{
   @extend .slider-cover-mobile-slide-size;
-  background-image: url("/img/slider-cover/fotomobile2.jpg");
 }
 .slider-cover-mobile-slide-4{
   @extend .slider-cover-mobile-slide-size;
-  background-image: url("/img/slider-cover/fotomobile1.jpg");
 }
 // ************* Главный слайдер обложки мобильной END
 

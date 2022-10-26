@@ -14,7 +14,7 @@ window.onload = fontsize;
 window.onresize = fontsize;  
 
 // слайдер обложки
-const swipercover = new Swiper('.slider-cover', {
+const swipercover = new Swiper(".slider-cover", {
     // Optional parameters
     loop: true,
     // Автопрокрутка
@@ -30,7 +30,7 @@ const swipercover = new Swiper('.slider-cover', {
     },      
 });
 // слайдер обложки мобильной
-const swiperCoverMobile = new Swiper('.slider-cover-mobile', {
+const swiperCoverMobile = new Swiper(".slider-cover-mobile", {
   // Optional parameters
   loop: true,
   // Автопрокрутка
@@ -46,26 +46,20 @@ const swiperCoverMobile = new Swiper('.slider-cover-mobile', {
   },      
 });
 // слайдер обложки с права
-const swiperright = new Swiper('.slider-right', {
-        // Optional parameters
+const swiperright = new Swiper(".slider-right", {
         direction: 'horizontal',
         loop: true,
-        // Автопрокрутка
         autoplay: {
         delay: 5000,
          
         },
-        // Скорость
         speed: 1000,
-      
-        // Стрелки
         navigation: {
             nextEl: '.swiper-button-next',
-            
         },
 });
 // слайдер шапки странциы продукта
-const swiperProduct = new Swiper('.slider-product', {
+const swiperProduct = new Swiper(".slider-product", {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
