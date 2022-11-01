@@ -31,15 +31,11 @@ const swipercover = new Swiper(".slider-cover", {
 });
 // слайдер обложки мобильной
 const swiperCoverMobile = new Swiper(".slider-cover-mobile", {
-  // Optional parameters
   loop: true,
-  // Автопрокрутка
   autoplay: {
   delay: 2000,
       },
-  // Скорость
   speed: 2000,
-  // Эффект
   effect: 'fade',
   fadeEffect: {
     crossFade: true

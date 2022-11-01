@@ -28,11 +28,13 @@
             }
           }
     }
-
+    // .slider-cover-mobile-slide-size{
+    //     height: 40vh;
+    // }
     .cover-mobile{
         display: block;
         &-slides{            
-            height: 514px; 
+            height: 40vh; 
             background-image: url(/img/slider-cover/fotomobile4.jpg);
             background-position: center; 
             background-repeat: no-repeat;
@@ -40,8 +42,15 @@
         }
         &-content{
             padding: 20px 20px 20px 20px;
-            outline: 1px solid white;
+            border: 1px solid white;
             border-radius: 30px;
+        }
+    }
+    .slide-cover-mobile-width{
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
    
@@ -75,6 +84,7 @@
             flex-wrap: wrap;
             &-img{
                 width: 100%;
+                height: 100%;
                 &:nth-child(1){
                     display: none;
                 }

@@ -11,7 +11,7 @@ padding-bottom: 70px;
 }
 
 .whiteblock{
-  padding: 70px 70px 80px 70px;
+  padding: 50px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg),
   url(/img/block-white-img-2.svg);
@@ -28,7 +28,7 @@ padding-bottom: 70px;
 }
 
 .whiteblock-map{
-  padding: 70px 70px 80px 70px;
+  padding: 50px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg),
   url(/img/img-map.png),
@@ -75,7 +75,12 @@ padding-bottom: 70px;
       backdrop-filter: blur(10px);
     }
   }
+
+
 }
+
+
+
 
 //************* Боковой лайдер обложки
 .v-slider-right{
@@ -285,7 +290,13 @@ padding-bottom: 70px;
     background-size: 100%;
   }
 }
-
+@media (max-width: 1024px){
+  .greenblock-progressimg{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+}
 .progress{
   &-numbers{
     margin-bottom: 20px;
@@ -328,10 +339,10 @@ padding-bottom: 70px;
   }
   &-photo{
     display: flex;
-    gap: 40px;
+    column-gap: 2%;
     justify-content: space-around;
     &-img{
-      width: 50%;
+      width: 49%;
       border-radius: 20px;
     }
   }

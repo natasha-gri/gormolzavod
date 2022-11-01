@@ -2,7 +2,6 @@
 /* 1_desctop-от 1600 до 1920 */
 /* ====== 1 Прижать футер */
 /* 1) */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html, body {
   height: 100%; }
 
@@ -56,7 +55,7 @@ footer {
   height: 75px; }
 
 .first-font, h1, h2, h3, .cover-cont-wrap-h1, .cover-cont-wrap-p, .typ-top-header-content-title p, .cover-mobile-content p, .text-name-card, .text-name-news, .typ-numbers-statistic, .typ-shops-title {
-  font-family: 'Bookman Old Style', 'IBM Plex Serif', serif; }
+  font-family: 'Bookman Old Style', 'Times New Roman', Times, serif; }
 
 .second-font, .v-slider-right-content-row p, .text-basic, .menu-link, .menu-item a,
 p, a, .text-text-card, .text-link-card, .text-link-news, .text-text-news, .text-date-news, .typ-numbers-description, .typ-benefits-title, .typ-benefits-quote, .typ-locations-title, .footer-text, .v-slider-right-nameproduct, .btn-cover, .v-slider-right-btn, .btn-page {
@@ -159,9 +158,9 @@ a {
   font-style: normal;
   line-height: 169%;
   letter-spacing: 0.025em;
-  color: #004fa3; }
+  color: #3C7D4A; }
   a:hover {
-    color: #003670; }
+    color: #2b5b36; }
 
 .menu-link {
   font-weight: 300;
@@ -260,8 +259,8 @@ a {
   color: #86A2A3; }
 
 .typ-numbers-statistic {
-  font-size: 5em;
-  line-height: 1.5em;
+  font-size: 5.8125em;
+  line-height: 1.2em;
   font-weight: 600;
   color: #ffffff; }
 
@@ -308,16 +307,6 @@ a {
   letter-spacing: 0.025em;
   color: #2F2F2F; }
 
-.footer-text-link {
-  display: block;
-  margin-bottom: -9px; }
-
-@media (max-width: 375px) {
-  .footer-text-link {
-    font-size: 0.9em; } }
-@media (max-width: 360px) {
-  .footer-text-link {
-    display: inline-block; } }
 /* Верхнее меню */
 /* под WP */
 .top-header {
@@ -425,7 +414,7 @@ main {
   padding-bottom: 70px; }
 
 .whiteblock {
-  padding: 50px 70px 80px 70px;
+  padding: 70px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg), url(/img/block-white-img-2.svg);
   background-position: 10px 10px, 99% 100%;
@@ -439,7 +428,7 @@ main {
   padding-right: 24px; }
 
 .whiteblock-map {
-  padding: 50px 70px 80px 70px;
+  padding: 70px 70px 80px 70px;
   background-color: white;
   background-image: url(/img/block-white-img-1.svg), url(/img/img-map.png), url(/img/beetle.svg);
   background-position: 10px 10px, 95% 85%, 90% 100%;
@@ -478,6 +467,20 @@ main {
       align-items: flex-start;
       background-color: rgba(118, 118, 118, 0.13);
       backdrop-filter: blur(10px); }
+  .cover-cont2 {
+    height: 725px; }
+    .cover-cont2-wrap {
+      width: 33.5%;
+      height: 100%;
+      padding-left: 28px;
+      padding-right: 20px;
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: rgba(206, 47, 47, 0.712); }
 
 .v-slider-right {
   width: 320px;
@@ -616,10 +619,6 @@ main {
     background-repeat: no-repeat;
     background-size: 100%; }
 
-@media (max-width: 1024px) {
-  .greenblock-progressimg {
-    padding-left: 20px;
-    padding-right: 20px; } }
 .progress-numbers {
   margin-bottom: 20px;
   display: flex;
@@ -652,10 +651,10 @@ main {
       width: 163px; }
 .progress-photo {
   display: flex;
-  column-gap: 2%;
+  gap: 40px;
   justify-content: space-around; }
   .progress-photo-img {
-    width: 49%;
+    width: 50%;
     border-radius: 20px; }
 
 /* 3 блок */
@@ -793,9 +792,7 @@ main {
   justify-content: center; }
 
 .slider-product-width img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; }
+  object-fit: cover; }
 
 .btn-left-slider-product {
   width: 42px;
@@ -947,7 +944,8 @@ footer {
     .footer-cont-copyright-dev {
       display: flex; }
       .footer-cont-copyright-dev-logo {
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: #2F2F2F; }
   .footer-cont-contacts {
     width: 37%;
     display: flex; }
@@ -1105,8 +1103,8 @@ footer {
       width: 33%; }
 
   .progress-numbers {
-    flex-wrap: wrap;
-    justify-content: flex-start; }
+    justify-content: flex-end;
+    flex-wrap: wrap; }
     .progress-numbers-item {
       width: 24%; }
 
@@ -1243,20 +1241,15 @@ footer {
   .cover-mobile {
     display: block; }
     .cover-mobile-slides {
-      height: 40vh;
+      height: 514px;
       background-image: url(/img/slider-cover/fotomobile4.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
     .cover-mobile-content {
       padding: 20px 20px 20px 20px;
-      border: 1px solid white;
+      outline: 1px solid white;
       border-radius: 30px; }
-
-  .slide-cover-mobile-width img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
 
   .greenblock-cover-mobile {
     padding: 10px 10px 10px 10px !important; }
@@ -1275,8 +1268,7 @@ footer {
   .progress-photo {
     flex-wrap: wrap; }
     .progress-photo-img {
-      width: 100%;
-      height: 100%; }
+      width: 100%; }
       .progress-photo-img:nth-child(1) {
         display: none; }
 
@@ -1505,17 +1497,8 @@ footer {
       .footer-cont-contacts-adres {
         width: 53%; } }
 @media (max-width: 480px) {
-  .btn-page::after {
-    right: 10%; }
-
-  .locations {
-    flex-direction: column; }
-    .locations-areas {
-      width: 100%; } }
-@media (max-width: 375px) {
   .btn-page {
-    width: 100%;
-    font-size: 4vw; }
+    padding: 21px 20% 17px 10%; }
     .btn-page::after {
       right: 10%; }
 
@@ -1557,6 +1540,12 @@ footer {
       width: 100%;
       height: 74%; }
 
+  .slider-cover-mobile-slide-size, .slider-cover-mobile-slide-1, .slider-cover-mobile-slide-2, .slider-cover-mobile-slide-3, .slider-cover-mobile-slide-4 {
+    height: 40vh; }
+
+  .cover-mobile-slides {
+    height: 40vh; }
+
   .greenblock-bgimg-img1 {
     width: 147px;
     height: 147px;
@@ -1588,31 +1577,5 @@ footer {
       width: 100%;
       margin-bottom: 10px;
       text-align: center; } }
-/* дополнительно */
-@media (max-width: 960px) {
-  .progress-numbers-item {
-    width: 40%; } }
-@media (max-width: 540px) {
-  .typ-numbers-statistic {
-    margin-bottom: 0;
-    font-size: 4.5em;
-    line-height: 1.7em; } }
-@media (max-width: 480px) {
-  .typ-numbers-statistic {
-    line-height: 0.9em;
-    margin-bottom: 0; }
-
-  .progress-numbers-item-description {
-    width: 82%; } }
-@media (max-width: 470px) {
-  .typ-numbers-statistic {
-    margin-bottom: 0;
-    font-size: 15vw; } }
-@media (max-width: 360px) {
-  .progress-numbers-item {
-    width: 60%; }
-
-  .typ-numbers-statistic {
-    font-size: 4.5em; } }
 
 /*# sourceMappingURL=style.css.map */

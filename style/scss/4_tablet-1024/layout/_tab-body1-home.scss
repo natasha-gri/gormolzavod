@@ -28,8 +28,8 @@
 
   .progress{
     &-numbers{
-      justify-content: flex-end;
       flex-wrap: wrap;
+      justify-content: flex-start;
       &-item{
         width: 24%;
       }

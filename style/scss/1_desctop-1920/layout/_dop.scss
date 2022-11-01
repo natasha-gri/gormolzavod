@@ -1,0 +1,39 @@
+@media (max-width: 960px) {
+  .progress-numbers-item {
+      width: 40%;
+  }
+}
+  
+@media (max-width: 540px) {
+  .typ-numbers-statistic{
+    margin-bottom: 0;
+    font-size: 4.5em;
+    line-height: 1.7em;
+  }
+}
+
+@media (max-width: 480px) {
+  .typ-numbers-statistic{
+    line-height: 0.9em;
+    margin-bottom: 0;
+  }
+  .progress-numbers-item-description{
+    width: 82%;
+  }
+}
+
+@media (max-width: 470px){
+  .typ-numbers-statistic{
+    margin-bottom: 0;
+    font-size: 15vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .progress-numbers-item {
+      width: 60%;
+  }
+  .typ-numbers-statistic{
+    font-size: 4.5em;
+  }
+}

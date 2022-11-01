@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .first-font {
-  font-family: 'Bookman Old Style', 'Times New Roman', Times, serif;
+  font-family: 'Bookman Old Style', 'IBM Plex Serif', serif;
 }
 
 .second-font {
@@ -262,8 +264,8 @@ a {
 
 .typ-numbers-statistic {
   @extend .first-font;
-  font-size: 5.8125em; //93
-  line-height: 1.2em; //25.6
+  font-size: 5em; //0
+  line-height: 1.5em; //0
   font-weight: 600;
   color: $text-color-white;
 }
@@ -333,5 +335,19 @@ a {
   line-height: 169%;
   letter-spacing: 0.025em;
   color: $text-1;
+}
+.footer-text-link{
+  display: block;
+  margin-bottom: -9px;
+}
+@media (max-width: 375px){
+  .footer-text-link{
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 360px){
+  .footer-text-link{
+    display: inline-block;
+  }
 }
 
