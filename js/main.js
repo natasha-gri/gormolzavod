@@ -11,7 +11,7 @@ function fontsize() {
     })
 }
 window.onload = fontsize;
-window.onresize = fontsize;  
+window.onresize = fontsize;
 
 // слайдер обложки
 const swipercover = new Swiper(".slider-cover", {
@@ -27,7 +27,7 @@ const swipercover = new Swiper(".slider-cover", {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
-    },      
+    },
 });
 // слайдер обложки мобильной
 const swiperCoverMobile = new Swiper(".slider-cover-mobile", {
@@ -39,7 +39,7 @@ const swiperCoverMobile = new Swiper(".slider-cover-mobile", {
   effect: 'fade',
   fadeEffect: {
     crossFade: true
-  },      
+  },
 });
 // слайдер обложки с права
 const swiperright = new Swiper(".slider-right", {
@@ -47,7 +47,7 @@ const swiperright = new Swiper(".slider-right", {
         loop: true,
         autoplay: {
         delay: 5000,
-         
+
         },
         speed: 1000,
         navigation: {
@@ -63,17 +63,17 @@ const swiperProduct = new Swiper(".slider-product", {
     // Автопрокрутка
     autoplay: {
     delay: 5000,
-     
+
     },
     // Скорость
     speed: 1000,
-    
+
     // Пагинация
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
-        
+
     },
 
     // Стрелки
@@ -82,6 +82,7 @@ const swiperProduct = new Swiper(".slider-product", {
         prevEl: '.swiper-button-prev',
     },
 });
+
 // слайдеры процесса
 var sliderprocmini = new Swiper(".slider-proc-mini", {
   // loop: true,
@@ -94,7 +95,7 @@ var sliderprocmain = new Swiper(".slider-proc-main", {
   loop: true,
   spaceBetween: 10,
 
-  
+
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -104,5 +105,3 @@ var sliderprocmain = new Swiper(".slider-proc-main", {
     swiper: sliderprocmini,
   },
 });
-
-
