@@ -416,18 +416,18 @@ label,
 
 body {
   background-color: #FFFBF6;
-  background-image: url(/img/bg-fon.svg);
+  background-image: url(../../img/bg-fon.svg);
   background-attachment: fixed;
   background-size: 12%; }
 
 main {
-  padding-top: 70px;
+  padding-top: 24px;
   padding-bottom: 70px; }
 
 .whiteblock {
   padding: 50px 70px 80px 70px;
   background-color: white;
-  background-image: url(/img/block-white-img-1.svg), url(/img/block-white-img-2.svg);
+  background-image: url(../../img/block-white-img-1.svg), url(../../img/block-white-img-2.svg);
   background-position: 10px 10px, 99% 100%;
   background-repeat: no-repeat;
   background-size: 15%, 15%;
@@ -441,7 +441,7 @@ main {
 .whiteblock-map {
   padding: 50px 70px 80px 70px;
   background-color: white;
-  background-image: url(/img/block-white-img-1.svg), url(/img/img-map.png), url(/img/beetle.svg);
+  background-image: url(../../img/block-white-img-1.svg), url(../../img../../img-map.png), url(../../img/beetle.svg);
   background-position: 10px 10px, 95% 85%, 90% 100%;
   background-repeat: no-repeat;
   background-size: 15%, 30%, 2%;
@@ -462,7 +462,7 @@ main {
   height: 725px;
   position: relative;
   background-color: #62887A;
-  background-image: url(/img/slider-cover/foto9.jpg); }
+  background-image: url(../../img/slider-cover/foto9.jpg); }
   .cover-cont {
     height: 725px; }
     .cover-cont-wrap {
@@ -576,7 +576,7 @@ main {
       background-color: #f2f2f2;
       border-radius: 15px;
       background-color: #f2f2f2;
-      background-image: url(/img/product-card-img.svg);
+      background-image: url(../../img/product-card-img.svg);
       background-position: right 103%;
       background-repeat: no-repeat;
       background-size: 35%; }
@@ -601,7 +601,7 @@ main {
     height: 147px;
     position: absolute;
     top: -19px;
-    background-image: url(/img/2block-img1.svg);
+    background-image: url(../../img/2block-img1.svg);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     background-size: 100%; }
@@ -611,7 +611,7 @@ main {
     position: absolute;
     bottom: 0;
     right: 45px;
-    background-image: url(/img/2block-img2.svg);
+    background-image: url(../../img/2block-img2.svg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100%; }
@@ -641,7 +641,7 @@ main {
         width: 160px;
         height: 89px;
         position: absolute;
-        background-image: url(/img/statistic-img.svg);
+        background-image: url(../../img/statistic-img.svg);
         background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: 33%; }
@@ -673,12 +673,12 @@ main {
       .benefits-cols-leftcol p {
         text-align: right; }
       .benefits-cols-leftcol-row-title:after {
-        content: url(/img/leaves-title.svg);
+        content: url(../../img/leaves-title.svg);
         margin-left: 12px; }
     .benefits-cols-rightcol {
       width: 44%; }
       .benefits-cols-rightcol-row-title:before {
-        content: url(/img/leaves-title.svg);
+        content: url(../../img/leaves-title.svg);
         margin-right: 12px; }
   .benefits-quote {
     margin-bottom: 35px;
@@ -714,7 +714,7 @@ main {
     position: absolute;
     top: -13px;
     left: -2px;
-    background-image: url(/img/shopblock-img1.svg);
+    background-image: url(../../img/shopblock-img1.svg);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -725,7 +725,7 @@ main {
     position: absolute;
     bottom: 0;
     right: 10px;
-    background-image: url(/img/shopblock-img2.svg);
+    background-image: url(../../img/shopblock-img2.svg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 83%; }
@@ -806,7 +806,7 @@ main {
   border: none;
   border-radius: 50%; }
   .btn-left-slider-product::after {
-    content: url(/img/arrow-left.svg);
+    content: url(../../img/arrow-left.svg);
     position: absolute;
     top: -8px;
     left: 11px; }
@@ -820,7 +820,7 @@ main {
   border: none;
   border-radius: 50%; }
   .btn-right-slider-product::after {
-    content: url(/img/arrow-right.svg);
+    content: url(../../img/arrow-right.svg);
     position: absolute;
     top: -8px;
     right: 11px; }
@@ -1207,7 +1207,7 @@ footer {
     position: absolute;
     right: 0px;
     top: 8px;
-    background-image: url(/img/menu.svg);
+    background-image: url(../../img/menu.svg);
     background-size: 100%;
     background-position: 0 0; }
 
@@ -1244,7 +1244,7 @@ footer {
     display: block; }
     .cover-mobile-slides {
       height: 40vh;
-      background-image: url(/img/slider-cover/fotomobile4.jpg);
+      background-image: url(../../img/slider-cover/fotomobile4.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -1289,7 +1289,7 @@ footer {
       .benefits-cols-leftcol-row-title:after {
         display: none; }
       .benefits-cols-leftcol-row-title:before {
-        content: url(/img/leaves-title.svg);
+        content: url(../../img/leaves-title.svg);
         margin-right: 12px; }
     .benefits-cols-rightcol {
       width: 100%; }
@@ -1603,7 +1603,7 @@ footer {
     margin-bottom: 0; }
 
   .progress-numbers-item-description {
-    width: 82%; } }
+    width: 96%; } }
 @media (max-width: 470px) {
   .typ-numbers-statistic {
     margin-bottom: 0;

@@ -2,6 +2,7 @@
 /* 1_desctop-от 1600 до 1920 */
 /* ====== 1 Прижать футер */
 /* 1) */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html, body {
   height: 100%; }
 
@@ -55,7 +56,7 @@ footer {
   height: 75px; }
 
 .first-font, h1, h2, h3, .cover-cont-wrap-h1, .cover-cont-wrap-p, .typ-top-header-content-title p, .cover-mobile-content p, .text-name-card, .text-name-news, .typ-numbers-statistic, .typ-shops-title {
-  font-family: 'Bookman Old Style', 'Times New Roman', Times, serif; }
+  font-family: 'Bookman Old Style', 'IBM Plex Serif', serif; }
 
 .second-font, .v-slider-right-content-row p, .text-basic, .menu-link, .menu-item a,
 p, a, .text-text-card, .text-link-card, .text-link-news, .text-text-news, .text-date-news, .typ-numbers-description, .typ-benefits-title, .typ-benefits-quote, .typ-locations-title, .footer-text, .v-slider-right-nameproduct, .btn-cover, .v-slider-right-btn, .btn-page {
@@ -158,9 +159,9 @@ a {
   font-style: normal;
   line-height: 169%;
   letter-spacing: 0.025em;
-  color: #3C7D4A; }
+  color: #004fa3; }
   a:hover {
-    color: #2b5b36; }
+    color: #003670; }
 
 .menu-link {
   font-weight: 300;
@@ -259,8 +260,8 @@ a {
   color: #86A2A3; }
 
 .typ-numbers-statistic {
-  font-size: 5.8125em;
-  line-height: 1.2em;
+  font-size: 5em;
+  line-height: 1.5em;
   font-weight: 600;
   color: #ffffff; }
 
@@ -307,6 +308,16 @@ a {
   letter-spacing: 0.025em;
   color: #2F2F2F; }
 
+.footer-text-link {
+  display: block;
+  margin-bottom: -9px; }
+
+@media (max-width: 375px) {
+  .footer-text-link {
+    font-size: 0.9em; } }
+@media (max-width: 360px) {
+  .footer-text-link {
+    display: inline-block; } }
 /* Верхнее меню */
 /* под WP */
 .top-header {
@@ -405,18 +416,18 @@ label,
 
 body {
   background-color: #FFFBF6;
-  background-image: url(/img/bg-fon.svg);
+  background-image: url(../../img/bg-fon.svg);
   background-attachment: fixed;
   background-size: 12%; }
 
 main {
-  padding-top: 70px;
+  padding-top: 24px;
   padding-bottom: 70px; }
 
 .whiteblock {
-  padding: 70px 70px 80px 70px;
+  padding: 50px 70px 80px 70px;
   background-color: white;
-  background-image: url(/img/block-white-img-1.svg), url(/img/block-white-img-2.svg);
+  background-image: url(../../img/block-white-img-1.svg), url(../../img/block-white-img-2.svg);
   background-position: 10px 10px, 99% 100%;
   background-repeat: no-repeat;
   background-size: 15%, 15%;
@@ -428,9 +439,9 @@ main {
   padding-right: 24px; }
 
 .whiteblock-map {
-  padding: 70px 70px 80px 70px;
+  padding: 50px 70px 80px 70px;
   background-color: white;
-  background-image: url(/img/block-white-img-1.svg), url(/img/img-map.png), url(/img/beetle.svg);
+  background-image: url(../../img/block-white-img-1.svg), url(../../img../../img-map.png), url(../../img/beetle.svg);
   background-position: 10px 10px, 95% 85%, 90% 100%;
   background-repeat: no-repeat;
   background-size: 15%, 30%, 2%;
@@ -451,7 +462,7 @@ main {
   height: 725px;
   position: relative;
   background-color: #62887A;
-  background-image: url(/img/slider-cover/foto9.jpg); }
+  background-image: url(../../img/slider-cover/foto9.jpg); }
   .cover-cont {
     height: 725px; }
     .cover-cont-wrap {
@@ -467,20 +478,6 @@ main {
       align-items: flex-start;
       background-color: rgba(118, 118, 118, 0.13);
       backdrop-filter: blur(10px); }
-  .cover-cont2 {
-    height: 725px; }
-    .cover-cont2-wrap {
-      width: 33.5%;
-      height: 100%;
-      padding-left: 28px;
-      padding-right: 20px;
-      position: absolute;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      background-color: rgba(206, 47, 47, 0.712); }
 
 .v-slider-right {
   width: 320px;
@@ -579,7 +576,7 @@ main {
       background-color: #f2f2f2;
       border-radius: 15px;
       background-color: #f2f2f2;
-      background-image: url(/img/product-card-img.svg);
+      background-image: url(../../img/product-card-img.svg);
       background-position: right 103%;
       background-repeat: no-repeat;
       background-size: 35%; }
@@ -604,7 +601,7 @@ main {
     height: 147px;
     position: absolute;
     top: -19px;
-    background-image: url(/img/2block-img1.svg);
+    background-image: url(../../img/2block-img1.svg);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     background-size: 100%; }
@@ -614,11 +611,15 @@ main {
     position: absolute;
     bottom: 0;
     right: 45px;
-    background-image: url(/img/2block-img2.svg);
+    background-image: url(../../img/2block-img2.svg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100%; }
 
+@media (max-width: 1024px) {
+  .greenblock-progressimg {
+    padding-left: 20px;
+    padding-right: 20px; } }
 .progress-numbers {
   margin-bottom: 20px;
   display: flex;
@@ -640,7 +641,7 @@ main {
         width: 160px;
         height: 89px;
         position: absolute;
-        background-image: url(/img/statistic-img.svg);
+        background-image: url(../../img/statistic-img.svg);
         background-position: 100% 100%;
         background-repeat: no-repeat;
         background-size: 33%; }
@@ -651,10 +652,10 @@ main {
       width: 163px; }
 .progress-photo {
   display: flex;
-  gap: 40px;
+  column-gap: 2%;
   justify-content: space-around; }
   .progress-photo-img {
-    width: 50%;
+    width: 49%;
     border-radius: 20px; }
 
 /* 3 блок */
@@ -672,12 +673,12 @@ main {
       .benefits-cols-leftcol p {
         text-align: right; }
       .benefits-cols-leftcol-row-title:after {
-        content: url(/img/leaves-title.svg);
+        content: url(../../img/leaves-title.svg);
         margin-left: 12px; }
     .benefits-cols-rightcol {
       width: 44%; }
       .benefits-cols-rightcol-row-title:before {
-        content: url(/img/leaves-title.svg);
+        content: url(../../img/leaves-title.svg);
         margin-right: 12px; }
   .benefits-quote {
     margin-bottom: 35px;
@@ -713,7 +714,7 @@ main {
     position: absolute;
     top: -13px;
     left: -2px;
-    background-image: url(/img/shopblock-img1.svg);
+    background-image: url(../../img/shopblock-img1.svg);
     background-position: 0% 0%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -724,7 +725,7 @@ main {
     position: absolute;
     bottom: 0;
     right: 10px;
-    background-image: url(/img/shopblock-img2.svg);
+    background-image: url(../../img/shopblock-img2.svg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 83%; }
@@ -792,7 +793,9 @@ main {
   justify-content: center; }
 
 .slider-product-width img {
-  object-fit: cover; }
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
 
 .btn-left-slider-product {
   width: 42px;
@@ -803,7 +806,7 @@ main {
   border: none;
   border-radius: 50%; }
   .btn-left-slider-product::after {
-    content: url(/img/arrow-left.svg);
+    content: url(../../img/arrow-left.svg);
     position: absolute;
     top: -8px;
     left: 11px; }
@@ -817,7 +820,7 @@ main {
   border: none;
   border-radius: 50%; }
   .btn-right-slider-product::after {
-    content: url(/img/arrow-right.svg);
+    content: url(../../img/arrow-right.svg);
     position: absolute;
     top: -8px;
     right: 11px; }
@@ -944,8 +947,7 @@ footer {
     .footer-cont-copyright-dev {
       display: flex; }
       .footer-cont-copyright-dev-logo {
-        text-transform: uppercase;
-        color: #2F2F2F; }
+        text-transform: uppercase; }
   .footer-cont-contacts {
     width: 37%;
     display: flex; }
@@ -1103,8 +1105,8 @@ footer {
       width: 33%; }
 
   .progress-numbers {
-    justify-content: flex-end;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: flex-start; }
     .progress-numbers-item {
       width: 24%; }
 
@@ -1205,7 +1207,7 @@ footer {
     position: absolute;
     right: 0px;
     top: 8px;
-    background-image: url(/img/menu.svg);
+    background-image: url(../../img/menu.svg);
     background-size: 100%;
     background-position: 0 0; }
 
@@ -1241,15 +1243,20 @@ footer {
   .cover-mobile {
     display: block; }
     .cover-mobile-slides {
-      height: 514px;
-      background-image: url(/img/slider-cover/fotomobile4.jpg);
+      height: 40vh;
+      background-image: url(../../img/slider-cover/fotomobile4.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
     .cover-mobile-content {
       padding: 20px 20px 20px 20px;
-      outline: 1px solid white;
+      border: 1px solid white;
       border-radius: 30px; }
+
+  .slide-cover-mobile-width img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
   .greenblock-cover-mobile {
     padding: 10px 10px 10px 10px !important; }
@@ -1268,7 +1275,8 @@ footer {
   .progress-photo {
     flex-wrap: wrap; }
     .progress-photo-img {
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
       .progress-photo-img:nth-child(1) {
         display: none; }
 
@@ -1281,7 +1289,7 @@ footer {
       .benefits-cols-leftcol-row-title:after {
         display: none; }
       .benefits-cols-leftcol-row-title:before {
-        content: url(/img/leaves-title.svg);
+        content: url(../../img/leaves-title.svg);
         margin-right: 12px; }
     .benefits-cols-rightcol {
       width: 100%; }
@@ -1497,8 +1505,17 @@ footer {
       .footer-cont-contacts-adres {
         width: 53%; } }
 @media (max-width: 480px) {
+  .btn-page::after {
+    right: 10%; }
+
+  .locations {
+    flex-direction: column; }
+    .locations-areas {
+      width: 100%; } }
+@media (max-width: 375px) {
   .btn-page {
-    padding: 21px 20% 17px 10%; }
+    width: 100%;
+    font-size: 4vw; }
     .btn-page::after {
       right: 10%; }
 
@@ -1540,12 +1557,6 @@ footer {
       width: 100%;
       height: 74%; }
 
-  .slider-cover-mobile-slide-size, .slider-cover-mobile-slide-1, .slider-cover-mobile-slide-2, .slider-cover-mobile-slide-3, .slider-cover-mobile-slide-4 {
-    height: 40vh; }
-
-  .cover-mobile-slides {
-    height: 40vh; }
-
   .greenblock-bgimg-img1 {
     width: 147px;
     height: 147px;
@@ -1577,5 +1588,31 @@ footer {
       width: 100%;
       margin-bottom: 10px;
       text-align: center; } }
+/* дополнительно */
+@media (max-width: 960px) {
+  .progress-numbers-item {
+    width: 40%; } }
+@media (max-width: 540px) {
+  .typ-numbers-statistic {
+    margin-bottom: 0;
+    font-size: 4.5em;
+    line-height: 1.7em; } }
+@media (max-width: 480px) {
+  .typ-numbers-statistic {
+    line-height: 0.9em;
+    margin-bottom: 0; }
+
+  .progress-numbers-item-description {
+    width: 96%; } }
+@media (max-width: 470px) {
+  .typ-numbers-statistic {
+    margin-bottom: 0;
+    font-size: 15vw; } }
+@media (max-width: 360px) {
+  .progress-numbers-item {
+    width: 60%; }
+
+  .typ-numbers-statistic {
+    font-size: 4.5em; } }
 
 /*# sourceMappingURL=style.css.map */
