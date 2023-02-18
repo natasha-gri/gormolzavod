@@ -1,6 +1,6 @@
 body {
   background-color: #FFFBF6;
-  background-image: url(/img/bg-fon.svg);
+  background-image: url(../../img/bg-fon.svg);
   background-attachment: fixed;
   background-size: 12%;
 }
@@ -13,8 +13,8 @@ padding-bottom: 70px;
 .whiteblock{
   padding: 50px 70px 80px 70px;
   background-color: white;
-  background-image: url(/img/block-white-img-1.svg),
-  url(/img/block-white-img-2.svg);
+  background-image: url(../../img/block-white-img-1.svg),
+  url(../../img/block-white-img-2.svg);
   background-position: 10px 10px, 99% 100%; 
   background-repeat: no-repeat;
   background-size: 15%, 15%;
@@ -30,9 +30,9 @@ padding-bottom: 70px;
 .whiteblock-map{
   padding: 50px 70px 80px 70px;
   background-color: white;
-  background-image: url(/img/block-white-img-1.svg),
-  url(/img/img-map.png),
-  url(/img/beetle.svg);
+  background-image: url(../../img/block-white-img-1.svg),
+  url(../../img../../img-map.png),
+  url(../../img/beetle.svg);
   background-position: 10px 10px, 95% 85%, 90% 100%; 
   background-repeat: no-repeat;
   background-size: 15%, 30%, 2%;
@@ -56,7 +56,7 @@ padding-bottom: 70px;
   height: 725px;
   position: relative;
   background-color: $main-color-green;
-  background-image: url(/img/slider-cover/foto9.jpg);
+  background-image: url(../../img/slider-cover/foto9.jpg);
   
   &-cont{
     height: 725px;    
@@ -234,7 +234,7 @@ padding-bottom: 70px;
     background-color: $product-card-color;  
     border-radius: 15px;
     background-color: $product-card-color;      
-    background-image: url(/img/product-card-img.svg);
+    background-image: url(../../img/product-card-img.svg);
     background-position: right 103%; 
     background-repeat: no-repeat;
     background-size: 35%;
@@ -273,7 +273,7 @@ padding-bottom: 70px;
     height: 147px;
     position: absolute;
     top: -19px;
-    background-image: url(/img/2block-img1.svg);
+    background-image: url(../../img/2block-img1.svg);
     background-position: 0% 0%; 
     background-repeat: no-repeat;
     background-size: 100%;
@@ -284,7 +284,7 @@ padding-bottom: 70px;
     position: absolute;
     bottom: 0;
     right: 45px;
-    background-image: url(/img/2block-img2.svg);
+    background-image: url(../../img/2block-img2.svg);
     background-position: 100% 100%; 
     background-repeat: no-repeat;
     background-size: 100%;
@@ -320,7 +320,7 @@ padding-bottom: 70px;
           width: 160px;
           height: 89px;
           position: absolute;
-          background-image: url(/img/statistic-img.svg);
+          background-image: url(../../img/statistic-img.svg);
           background-position: 100% 100%;
           background-repeat: no-repeat;
           background-size: 33%;
@@ -366,7 +366,7 @@ padding-bottom: 70px;
       &-row{
         &-title{
           &:after{
-            content: url(/img/leaves-title.svg);
+            content: url(../../img/leaves-title.svg);
             margin-left: 12px;
           }
         }
@@ -377,7 +377,7 @@ padding-bottom: 70px;
       &-row{
         &-title{
           &:before{
-            content: url(/img/leaves-title.svg);
+            content: url(../../img/leaves-title.svg);
             margin-right: 12px;
           }
         }
@@ -427,7 +427,7 @@ padding-bottom: 70px;
     position: absolute;
     top: -13px;
     left: -2px;
-    background-image: url(/img/shopblock-img1.svg);
+    background-image: url(../../img/shopblock-img1.svg);
     background-position: 0% 0%; 
     background-repeat: no-repeat;
     background-size: 100%;
@@ -439,7 +439,7 @@ padding-bottom: 70px;
     position: absolute;
     bottom: 0;
     right: 10px;
-    background-image: url(/img/shopblock-img2.svg);
+    background-image: url(../../img/shopblock-img2.svg);
     background-position: 100% 100%; 
     background-repeat: no-repeat;
     background-size: 83%;

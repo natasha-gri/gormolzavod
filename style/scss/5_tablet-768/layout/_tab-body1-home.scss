@@ -35,7 +35,7 @@
         display: block;
         &-slides{            
             height: 40vh; 
-            background-image: url(/img/slider-cover/fotomobile4.jpg);
+            background-image: url(../../img/slider-cover/fotomobile4.jpg);
             background-position: center; 
             background-repeat: no-repeat;
             background-size: cover;
@@ -107,7 +107,7 @@
                             display: none;
                         }
                         &:before{
-                            content: url(/img/leaves-title.svg);
+                            content: url(../../img/leaves-title.svg);
                             margin-right: 12px;
                           }
                     }

@@ -65,7 +65,7 @@
     border: none;
     border-radius: 50%;
     &::after{
-        content: url(/img/arrow-left.svg);
+        content: url(../../img/arrow-left.svg);
         position: absolute;
         top: -8px;
         left: 11px;
@@ -80,7 +80,7 @@
     border: none;
     border-radius: 50%;
     &::after{
-        content: url(/img/arrow-right.svg);
+        content: url(../../img/arrow-right.svg);
         position: absolute;
         top: -8px;
         right: 11px;
