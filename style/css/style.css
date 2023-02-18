@@ -441,7 +441,7 @@ main {
 .whiteblock-map {
   padding: 50px 70px 80px 70px;
   background-color: white;
-  background-image: url(../../img/block-white-img-1.svg), url(../../img../../img-map.png), url(../../img/beetle.svg);
+  background-image: url(../../img/block-white-img-1.svg), url(../../img/img-map.png), url(../../img/beetle.svg);
   background-position: 10px 10px, 95% 85%, 90% 100%;
   background-repeat: no-repeat;
   background-size: 15%, 30%, 2%;
@@ -979,7 +979,7 @@ footer {
   .btn-cover:active {
     background-color: #ffd184; }
   .btn-cover::after {
-    content: url(/img/arrow-btn-right.svg);
+    content: url(../../img/arrow-btn-right.svg);
     position: absolute;
     top: 18px;
     right: 42px;
@@ -999,7 +999,7 @@ footer {
   .v-slider-right-btn:hover::after {
     opacity: 1; }
   .v-slider-right-btn::after {
-    content: url(/img/arrow-slider-btn-right.svg);
+    content: url(../../img/arrow-slider-btn-right.svg);
     position: absolute;
     top: -15px;
     right: 40%;
@@ -1028,7 +1028,7 @@ footer {
   .btn-page:active {
     background-color: #ffce7a; }
   .btn-page::after {
-    content: url(/img/arrow-btn-right.svg);
+    content: url(../../img/arrow-btn-right.svg);
     position: absolute;
     top: 18px;
     right: 42px;

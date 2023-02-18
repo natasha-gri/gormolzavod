@@ -28,7 +28,7 @@
   }
 
   &::after {
-    content: url(/img/arrow-btn-right.svg);
+    content: url(../../img/arrow-btn-right.svg);
     position: absolute;
     top: 18px;
     right: 42px;
@@ -54,7 +54,7 @@
     }
   }
   &::after {
-    content: url(/img/arrow-slider-btn-right.svg);
+    content: url(../../img/arrow-slider-btn-right.svg);
     position: absolute;
     top: -15px;
     right: 40%;
@@ -93,7 +93,7 @@
     background-color: darken($btn-page, 5%);
   }
   &::after {
-    content: url(/img/arrow-btn-right.svg);
+    content: url(../../img/arrow-btn-right.svg);
     position: absolute;
     top: 18px;
     right: 42px;
