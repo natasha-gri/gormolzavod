@@ -9,6 +9,9 @@
             }
         }
     }
+    .main-header-menu-wrp > .menu-list > li:nth-child(1) > a:after{
+      top: 76px;
+    }
 
     .mobile-logo{
         display: block;
