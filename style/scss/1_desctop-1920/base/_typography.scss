@@ -339,6 +339,10 @@ a {
 .footer-text-link{
   display: block;
   margin-bottom: -9px;
+  color: $text-link-ongreen;
+  &:hover{
+    color: white;
+  }
 }
 @media (max-width: 375px){
   .footer-text-link{

@@ -46,6 +46,9 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+@media (max-width: 768px) {
+  .padding-top-block {
+    padding-top: 60px; } }
 /* 5) для заголовка и изображения*/
 .padding-block-textimg {
   min-height: 200px;
@@ -310,7 +313,10 @@ a {
 
 .footer-text-link {
   display: block;
-  margin-bottom: -9px; }
+  margin-bottom: -9px;
+  color: #dadddc; }
+  .footer-text-link:hover {
+    color: white; }
 
 @media (max-width: 375px) {
   .footer-text-link {
@@ -947,7 +953,10 @@ footer {
     .footer-cont-copyright-dev {
       display: flex; }
       .footer-cont-copyright-dev-logo {
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        color: #dadddc; }
+        .footer-cont-copyright-dev-logo:hover {
+          color: white; }
   .footer-cont-contacts {
     width: 37%;
     display: flex; }
@@ -1077,6 +1086,9 @@ footer {
   .container-rows {
     width: 93.94%; } }
 @media (max-width: 1024px) {
+  h1 {
+    font-size: 6vw; }
+
   h2 {
     font-size: 2em;
     margin-bottom: 38px; }
@@ -1089,6 +1101,9 @@ footer {
 
   .text-text-card {
     font-size: 0.875em; } }
+@media (max-width: 1024px) {
+  .menu-item a {
+    min-width: 146px; } }
 @media (max-width: 1024px) {
   body {
     background-size: 20%; }
@@ -1285,7 +1300,8 @@ footer {
     .benefits-cols-leftcol {
       width: 100%; }
       .benefits-cols-leftcol p {
-        text-align: left; }
+        text-align: left;
+        line-height: 1.5; }
       .benefits-cols-leftcol-row-title:after {
         display: none; }
       .benefits-cols-leftcol-row-title:before {
@@ -1293,6 +1309,8 @@ footer {
         margin-right: 12px; }
     .benefits-cols-rightcol {
       width: 100%; }
+      .benefits-cols-rightcol p {
+        line-height: 1.5; }
   .benefits-quote p {
     width: 100%; }
   .benefits-docs {
@@ -1451,7 +1469,8 @@ footer {
         width: 98%; }
 
   .products-cols-col {
-    width: 100%; }
+    width: 100%;
+    background-position: right 105%; }
 
   .progress-numbers {
     column-gap: 20px;
@@ -1488,7 +1507,7 @@ footer {
 
   .btn-slider-right {
     margin-right: 0; } }
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .footer-cont {
     height: 265px;
     justify-content: space-between;
@@ -1565,6 +1584,9 @@ footer {
     width: 230px;
     height: 165px;
     background-size: 65%; }
+
+  .products-cols-col {
+    background-position: right 104%; }
 
   .progress-numbers-item {
     width: 60%; } }

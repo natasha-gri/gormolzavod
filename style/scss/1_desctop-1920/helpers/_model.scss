@@ -55,6 +55,12 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 768px){
+  .padding-top-block {
+    padding-top: 60px;
+  }
+
+}
 /* 5) для заголовка и изображения*/
 .padding-block-textimg {
   min-height: 200px;

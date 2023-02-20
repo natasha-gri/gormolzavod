@@ -23,61 +23,69 @@
               <div class="top-header-content container-rows">
                   <!-- Лого мобильное-->
                   <div class="top-header-content-logocont mobile-logo">
-                      <a href="index.html" class="top-header-content-logocont-logo"><img src="img/logo3-wp.png" alt="logo" width="121">
-                      </a>
-                  </div>
-  
-                  <!-- Лого -->
-                  <div class="top-header-content-logocont">
-                      <a href="index.html" class="top-header-content-logocont-logo"><img src="img/logo3-wp.png" alt="logo" width="121">
-                      </a>
-                  </div>
-  
-                <!-- Меню десктоп под WP-->
-                <nav class="main-header-menu-wrp menu" id="#">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="page-products.html">Продукция</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="news.html">Новости</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="aboutus.html">О нас</a>
-                            <span class="menu-arrow arrow"></span>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="aboutus.html">История завода</a>
-                                </li>
-                                <li>
-                                    <a href="aboutus.html">Наши партнеры</a>
-                                </li>
-                                <li>
-                                    <a href="aboutus.html">Политика руководства</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="contacts.html">Контакты</a>
-                        </li>
-                    </ul>
-
-                </nav>
-                  <!-- Меню END -->
+                    <a href="index.html" class="top-header-content-logocont-logo"><img src="img/logo3-wp.png" alt="logo" width="100"></a>
                 </div>
-            </div>
 
-        </header>
+                <!-- Лого -->
+                <div class="top-header-content-logocont">
+                    <a href="index.html" class="top-header-content-logocont-logo"><img src="img/logo3-wp.png" alt="logo" width="121"></a>
+                </div>
+
+                <!-- Заголовок меню -->
+                <div class="top-header-content-title typ-top-header-content-title">
+                    <p>Тобольское<br>молоко</p>
+                </div>
+  
+                <!-- Меню -->
+                <div id="mainMenu" class="main-header-menu">
+                  <label for="menu" class="main-header-menu-label"></label>
+                  <input id="menu" type="checkbox" class="main-header-menu-input">
+                  <!-- Меню десктоп под WP-->
+                  <nav class="main-header-menu-wrp menu" id="#">
+                      <ul class="menu-list">
+                          <li class="menu-item">
+                              <a href="page-products.html">Продукция</a>
+                          </li>
+                          <li class="menu-item">
+                              <a href="news.html">Новости</a>
+                          </li>
+                          <li class="menu-item">
+                              <a href="index.html">Главная</a>
+                          </li>
+                          <li class="menu-item">
+                              <a href="aboutus.html">О нас</a>
+                              <span class="menu-arrow arrow"></span>
+                              <ul class="sub-menu">
+                                  <li>
+                                      <a href="aboutus.html">История завода</a>
+                                  </li>
+                                  <li>
+                                      <a href="aboutus.html">Наши партнеры</a>
+                                  </li>
+                                  <li>
+                                      <a href="aboutus.html">Политика руководства</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li class="menu-item">
+                              <a href="contacts.html">Контакты</a>
+                          </li>
+                      </ul>
+  
+                  </nav>
+                    <!-- Меню END -->
+                  </div>
+                </div>
+              </div>
+  
+            </header>
 
         <main>
             
              <!-- 1 блок -->
             <section>
                 <!-- цвет фона + падинги сверху-снизу -->
-                <div class="padding-block-text"> 
+                <div class="padding-block-text padding-top-block"> 
                     <!-- стили контента + границы сетки -->
                     <div class="whiteblock container-rows">
                       <h3>Страница новости</h3>   
@@ -95,7 +103,7 @@
 </div>
 <!-- высота, фон, центрирование содержимого -->
 <footer>
-  <!-- стили контента + границы сетки -->
+  <!-- стили контента и граница сетки -->
   <div class="footer-logocont">
       <a href="index.html" class="footer-logocont-logo"><img src="img/logo3-wp.png" alt="logo" width="140">
       </a>
@@ -111,14 +119,15 @@
           </div>
           <div class="footer-cont-copyright-dev">
               <p class="footer-text">сайт разработан компанией&nbsp;</p>
-              <a href="#"  class="footer-cont-copyright-dev-logo">Studio</a>
+              <a href="#" class="footer-cont-copyright-dev-logo">Studio</a>
           </div>
       </div>
       <div class="footer-cont-contacts">
           <div class="footer-cont-contacts-phone">
-              <p class="footer-text">8 (3456) 25-01-68</p>
-              <p class="footer-text">8 (919) 948-99-00</p>
-              <p class="footer-text">8 (902) 624-16-92</p>
+              <a href="tel:8(3456)250168"class="footer-text-link">8 (3456) 25-01-68</a></br>
+              <a href="tel:8(919)9489900"class="footer-text-link">8 (919) 948-99-00</a></br>
+              <a href="tel:8(902)6241692"class="footer-text-link">8 (902) 624-16-92</a></br>
+              
           </div>
           <div class="footer-cont-contacts-adres">
               <p class="footer-text">tob_moloko@mail.ru</p>
@@ -126,6 +135,5 @@
           </div>
       </div>
   </div>
-</footer>
 </body>
 </html>

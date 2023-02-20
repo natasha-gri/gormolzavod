@@ -21,6 +21,10 @@ footer{
       display: flex;
       &-logo{
         text-transform: uppercase;
+        color: $text-link-ongreen;
+        &:hover{
+          color: white;
+        }
       }
     }
       
